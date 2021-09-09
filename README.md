@@ -58,14 +58,40 @@ To access the help file for any of `phsstyles`’ functions, type
 
 ``` r
 # Generate hex code for those colours
-phs_colours(c("phs-blue", "phs-darkblue"))
-#> [1] "#0391BF" "#092869"
+phs_colours(c("phs-blue", "phs-purple"))
+#> [1] "#0078D4" "#3F3685"
 
 # List hex code for all the available colours
 phs_colours()
-#> phs-darkblue     phs-blue 
-#>    "#092869"    "#0391BF"
+#>      phs-purple     phs-magenta        phs-blue       phs-green    phs-graphite 
+#>       "#3F3685"       "#9B4393"       "#0078D4"       "#83BB26"       "#948DA3" 
+#>        phs-teal     phs-liberty        phs-rust   phs-purple-80   phs-purple-50 
+#>       "#1E7F84"       "#6B5C85"       "#C73918"       "#655E9D"       "#9F9BC2" 
+#>   phs-purple-30   phs-purple-10  phs-magenta-80  phs-magenta-50  phs-magenta-30 
+#>       "#C5C3DA"       "#ECEBF3"       "#AF69A9"       "#CDA1C9"       "#E1C7DF" 
+#>  phs-magenta-10     phs-blue-80     phs-blue-50     phs-blue-30     phs-blue-10 
+#>       "#F5ECF4"       "#3393DD"       "#80BCEA"       "#B3D7F2"       "#E6F2FB" 
+#>    phs-green-80    phs-green-50    phs-green-30    phs-green-10 phs-graphite-80 
+#>       "#9CC951"       "#C1DD93"       "#DAEBBE"       "#F3F8E9"       "#A9A4B5" 
+#> phs-graphite-50 phs-graphite-30 phs-graphite-10     phs-teal-80     phs-teal-50 
+#>       "#CAC6D1"       "#DFDDE3"       "#F4F4F6"       "#4B999D"       "#8FBFC2" 
+#>     phs-teal-30     phs-teal-10  phs-liberty-80  phs-liberty-50  phs-liberty-30 
+#>       "#BCD9DA"       "#E9F2F3"       "#897D9D"       "#B5AEC2"       "#D3CEDA" 
+#>  phs-liberty-10     phs-rust-80     phs-rust-50     phs-rust-30     phs-rust-10 
+#>       "#F0EFF3"       "#D26146"       "#E39C8C"       "#EEC4BA"       "#F9EBE8"
+
+# Create a ggplot chart using this function
+library(ggplot2)
+#> Warning: package 'ggplot2' was built under R version 3.6.3
+phs_bar_chart <- ggplot(mtcars, aes(x=as.factor(cyl), fill=as.factor(cyl) )) +  
+  geom_bar( ) +
+  scale_fill_manual(values = phs_colours(c("phs-purple", "phs-magenta", "phs-blue"))) +
+  theme(legend.position="none")
+
+phs_bar_chart
 ```
+
+![](README-phs_colours-1.png)<!-- -->
 
 ## Contributing to phsstyles
 

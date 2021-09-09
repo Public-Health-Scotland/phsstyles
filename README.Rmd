@@ -58,10 +58,19 @@ To access the help file for any of `phsstyles`' functions, type `?function_name`
 
 ```{r phs_colours}
 # Generate hex code for those colours
-phs_colours(c("phs-blue", "phs-darkblue"))
+phs_colours(c("phs-blue", "phs-purple"))
 
 # List hex code for all the available colours
 phs_colours()
+
+# Create a ggplot chart using this function
+library(ggplot2)
+phs_bar_chart <- ggplot(mtcars, aes(x=as.factor(cyl), fill=as.factor(cyl) )) +  
+  geom_bar( ) +
+  scale_fill_manual(values = phs_colours(c("phs-purple", "phs-magenta", "phs-blue"))) +
+  theme(legend.position="none")
+
+phs_bar_chart
 ```
 
 ## Contributing to phsstyles

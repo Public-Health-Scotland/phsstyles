@@ -14,12 +14,12 @@ phs_colours(colourname = NULL)
 hex value \code{\link{phs_colour_values}}
 }
 \details{
-Named PHS colours can be phs-blue, phs-darkblue
+Named PHS colours can be phs-blue, phs-purple
 }
 \examples{
 phs_colours("phs-blue")
 
-phs_colours(c("phs-blue", "phs-darkblue"))
+phs_colours(c("phs-blue", "phs-purple"))
 
 phs_colours()
 

@@ -3,14 +3,14 @@
 #' @description \code{phs_colours} takes named PHS colours and returns their
 #' hex value \code{\link{phs_colour_values}}
 #'
-#' @details Named PHS colours can be phs-blue, phs-darkblue
+#' @details Named PHS colours can be phs-blue, phs-purple
 #'
 #' @param colourname A colour name or vector of colour names.
 #'
 #' @examples
 #' phs_colours("phs-blue")
 #'
-#' phs_colours(c("phs-blue", "phs-darkblue"))
+#' phs_colours(c("phs-blue", "phs-purple"))
 #'
 #' phs_colours()
 #'
