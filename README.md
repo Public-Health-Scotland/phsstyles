@@ -83,10 +83,10 @@ phs_colours()
 # Create a ggplot chart using this function
 library(ggplot2)
 #> Warning: package 'ggplot2' was built under R version 3.6.3
-phs_bar_chart <- ggplot(mtcars, aes(x=as.factor(cyl), fill=as.factor(cyl) )) +  
-  geom_bar( ) +
+phs_bar_chart <- ggplot(mtcars, aes(x = as.factor(cyl), fill = as.factor(cyl))) +  
+  geom_bar() +
   scale_fill_manual(values = phs_colours(c("phs-purple", "phs-magenta", "phs-blue"))) +
-  theme(legend.position="none")
+  theme(legend.position = "none")
 
 phs_bar_chart
 ```
