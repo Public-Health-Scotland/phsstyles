@@ -19,7 +19,7 @@ phs_colours <- function(colourname = NULL){
   # load the vector phs_colour_values
   phs_colour_values <- phsstyles::phs_colour_values
 
-  if(is.null(colourname)) {
+  if (is.null(colourname)) {
     phs_colour_values
   } else if (any(!colourname %in% names(phs_colour_values))) {
       col_not_list <- colourname[!colourname %in% names(phs_colour_values)]
