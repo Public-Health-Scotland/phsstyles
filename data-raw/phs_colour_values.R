@@ -57,4 +57,50 @@ phs_colour_values <- c(
   "phs-rust-30" = "#EEC4BA",
   "phs-rust-10" = "#F9EBE8")
 
-usethis::use_data(phs_colour_values, overwrite = TRUE)
+phs_palettes <- list(
+  "main" = phsstyles::phs_colours(c("phs-purple", "phs-magenta",
+                                  "phs-blue", "phs-green")),
+  "supporting" = phsstyles::phs_colours(c("phs-graphite", "phs-teal",
+                                        "phs-liberty", "phs-rust")),
+  "all" = phsstyles::phs_colours(c("phs-purple", "phs-magenta",
+                                 "phs-blue", "phs-green",
+                                 "phs-graphite", "phs-teal",
+                                 "phs-liberty", "phs-rust")),
+  "main-purples" = phsstyles::phs_colours(c("phs-purple", "phs-purple-80",
+                                          "phs-purple-50", "phs-purple-30",
+                                          "phs-purple-10")),
+  "main-magentas" = phsstyles::phs_colours(c("phs-magenta", "phs-magenta-80",
+                                           "phs-magenta-50", "phs-magenta-30",
+                                           "phs-magenta-10")),
+  "main-blues" = phsstyles::phs_colours(c("phs-blue", "phs-blue-80",
+                                        "phs-blue-50", "phs-blue-30",
+                                        "phs-blue-10")),
+  "main-greens" = phsstyles::phs_colours(c("phs-green", "phs-green-80",
+                                         "phs-green-50", "phs-green-30",
+                                         "phs-green-10")),
+  "supporting-graphites" = phsstyles::phs_colours(c("phs-graphite",
+                                                  "phs-graphite-80",
+                                                  "phs-graphite-50",
+                                                  "phs-graphite-30",
+                                                  "phs-graphite-10")),
+  "supporting-teals" = phsstyles::phs_colours(c("phs-teal", "phs-teal-80",
+                                              "phs-teal-50", "phs-teal-30",
+                                              "phs-teal-10")),
+  "supporting-liberties" = phsstyles::phs_colours(c("phs-liberty",
+                                                  "phs-liberty-80",
+                                                  "phs-liberty-50",
+                                                  "phs-liberty-30",
+                                                  "phs-liberty-10")),
+  "supporting-rusts" = phsstyles::phs_colours(c("phs-rust", "phs-rust-80",
+                                              "phs-rust-50", "phs-rust-30",
+                                              "phs-rust-10")))
+
+phs_palette_types <- list(
+  qual = c("main", "supporting", "all"),
+  seq = c("main-purples", "main-magentas",
+          "main-blues", "main-greens",
+          "supporting-graphites", "supporting-teals",
+          "supporting-liberties", "supporting-rusts"))
+
+usethis::use_data(phs_colour_values, phs_palettes, phs_palette_types,
+                  overwrite = TRUE)

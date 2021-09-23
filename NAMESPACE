@@ -2,3 +2,5 @@
 
 export(phs_colours)
 export(phs_theme)
+export(scale_colour_discrete_phs)
+export(scale_fill_discrete_phs)
