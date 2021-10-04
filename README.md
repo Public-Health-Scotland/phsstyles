@@ -3,8 +3,8 @@
 
 # phsstyles
 
-There are 8 colours for use in \[Public Health Scotland (PHS)\]
-(<https://www.publichealthscotland.scot/>):
+There are 8 colours for use in [Public Health Scotland
+(PHS)](https://www.publichealthscotland.scot/):
 
 -   4 main colours (PHS purple, PHS magenta, PHS blue and PHS green)
 -   4 supporting colours (PHS graphite, PHS teal, PHS liberty and PHS
@@ -23,8 +23,8 @@ Each colour with their gradients are shown below:
 ![Supporting colours with their
 gradients](README-supporting_colours.png)
 
-Please see \[Chart and Dashboard Accessibility Guidance\]
-(<http://spark.publichealthscotland.org/media/2176/chart-and-dashboard-accessibility-guidance-version-12.pdf>)
+Please see [Chart and Dashboard Accessibility
+Guidance](http://spark.publichealthscotland.org/media/2176/chart-and-dashboard-accessibility-guidance-version-12.pdf)
 for more information.
 
 `phsstyles` contains functions for creating graphics with standard
