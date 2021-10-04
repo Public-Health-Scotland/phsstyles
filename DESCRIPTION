@@ -1,8 +1,10 @@
 Package: phsstyles
 Title: Standard Graphic Styles for use in Public Health Scotland
 Version: 0.0.1
-Authors@R: 
-    person(given = "Tina", family = "Fu", email = "Yuyan.Fu2@phs.scot", role = c("aut", "cre"))
+Authors@R: c(
+    person("Tina", "Fu", email = "Yuyan.Fu2@phs.scot", role = c("aut", "cre")), 
+    person("Bob", "Taylor", email = "bob.taylor2@phs.scot", role = "aut")
+    )
 Description: Bespoke functions for creating graphics and visualisations in Public Health Scotland.
 License: MIT + file LICENSE
 URL: https://github.com/Public-Health-Scotland/phsstyles
@@ -10,7 +12,8 @@ BugReports: https://github.com/Public-Health-Scotland/phsstyles/issues
 Depends: 
     R (>= 2.10)
 Imports: 
-    ggplot2
+    ggplot2, 
+    scales
 Suggests: 
     testthat (>= 3.0.0)
 Encoding: UTF-8

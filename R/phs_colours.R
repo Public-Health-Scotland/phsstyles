@@ -6,6 +6,8 @@
 #' @details Named PHS colours can be phs-blue, phs-purple
 #'
 #' @param colourname A colour name or vector of colour names.
+#' @param keep_names whether to keep the colour names with hex values.
+#' Defaulted as FALSE.
 #'
 #' @examples
 #' phs_colours("phs-blue")
@@ -15,7 +17,7 @@
 #' phs_colours()
 #'
 #' @export
-phs_colours <- function(colourname = NULL){
+phs_colours <- function(colourname = NULL, keep_names = FALSE){
   # load the vector phs_colour_values
   phs_colour_values <- phsstyles::phs_colour_values
 
@@ -28,7 +30,9 @@ phs_colours <- function(colourname = NULL){
                    "\nPlease run phs_colours() to see all the available colours"
                    )
       stop(msg)
-  } else {
+  } else if (!keep_names) {
       unname(phs_colour_values[colourname])
-    }
+  } else {
+      phs_colour_values[colourname]
+  }
 }

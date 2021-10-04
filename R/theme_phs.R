@@ -1,12 +1,12 @@
-#' @title Public Health Scotland theme for ggplot2 plots.
+#' @title Public Health Scotland theme for ggplot2 charts.
 #'
-#' @description This adds certain styles to ggplot2 plots that conform with
+#' @description This adds certain styles to ggplot2 charts that conform with
 #' Public Health Scotland style guidelines.
 #'
 #' @examples
-#' ggplot2::qplot(mpg, wt, data = mtcars) + phs_theme()
+#' ggplot2::qplot(mpg, wt, data = mtcars) + theme_phs()
 #' @export
-phs_theme <- function() {
+theme_phs <- function() {
 
   fontStyle     <- "sans"
   gridLineColor <- grDevices::rgb(190 / 255, 190 / 255, 190 / 255)
@@ -66,7 +66,7 @@ phs_theme <- function() {
     # In many cases you will want to change this to remove vertical gridlines
     # and add horizontal gridlines. The cookbook shows you examples for doing so
     panel.grid.minor   = ggplot2::element_blank(),
-    panel.grid.major.x = ggplot2::element_line(color=gridLineColor),
+    panel.grid.major.x = ggplot2::element_line(color = gridLineColor),
     panel.grid.major.y = ggplot2::element_blank(),
 
     # Blank Background

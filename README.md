@@ -3,11 +3,43 @@
 
 # phsstyles
 
+There are 8 colours for use in \[Public Health Scotland (PHS)\]
+(<https://www.publichealthscotland.scot/>):
+
+-   4 main colours (PHS purple, PHS magenta, PHS blue and PHS green)
+-   4 supporting colours (PHS graphite, PHS teal, PHS liberty and PHS
+    rust)
+-   Within each colour there are 5 gradients (e.g. for PHS purple, it
+    contains 100%, 80%, 50%, 30% and 10%)
+
+Those 8 colours are shown below:
+
+![All eight colours for use in Public Health
+Scotland](README-eight_colours.png)
+
+Each colour with their gradients are shown below:
+
+![Main colours with their gradients](README-main_colours.png)
+![Supporting colours with their
+gradients](README-supporting_colours.png)
+
+Please see \[Chart and Dashboard Accessibility Guidance\]
+(<http://spark.publichealthscotland.org/media/2176/chart-and-dashboard-accessibility-guidance-version-12.pdf>)
+for more information.
+
 `phsstyles` contains functions for creating graphics with standard
-styles in [Public Health Scotland
-(PHS)](https://www.publichealthscotland.scot/):
+styles in PHS:
 
 -   `phs_colours()` returns hex value for specific named colours
+-   `theme_phs()` apply pre-defined PHS theme for charts
+-   `scale_colour_discrete_phs()` apply discrete PHS colour scales for
+    charts
+-   `scale_fill_discrete_phs()` apply discrete PHS colour filling scales
+    for charts
+-   `scale_colour_continuous_phs()` apply continuous PHS colour scales
+    for charts
+-   `scale_fill_continuous_phs()` apply continuous PHS colour filling
+    scales for charts
 
 `phsstyles` can be used on both the
 [server](https://rstudio.nhsnss.scot.nhs.uk/) and desktop versions of
@@ -93,9 +125,81 @@ phs_bar_chart
 
 ![](README-phs_colours-1.png)<!-- -->
 
+### theme\_phs
+
+``` r
+library(ggplot2)
+# Apply PHS theme to a chart
+qplot(mpg, wt, data = mtcars) + theme_phs()
+```
+
+![](README-theme_phs-1.png)<!-- -->
+
+``` r
+# Overwirte a feature (e.g. remove vertical gridlines and add horizontal ones)
+qplot(mpg, wt, data = mtcars) + theme_phs() +
+  theme(panel.grid.major.x = element_blank(), 
+        panel.grid.major.y = element_line(colour = 
+                                            grDevices::rgb(190 / 255, 
+                                                           190 / 255, 
+                                                           190 / 255)))
+```
+
+![](README-theme_phs-2.png)<!-- -->
+
+### scale\_colour\_discrete\_phs
+
+``` r
+# Create a scatter plot using PHS main colour palette
+library(ggplot2)
+df <- mtcars
+df[,'cyl'] <- as.factor(df[,'cyl'])
+qplot(mpg, wt, data = df, colour = cyl) +
+scale_colour_discrete_phs(palette = "main")
+```
+
+![](README-scale_colour_discrete_phs-1.png)<!-- -->
+
+### scale\_fill\_discrete\_phs
+
+``` r
+# Create a bar chart filled with colours from PHS main-blues palette
+library(ggplot2)
+ggplot(mtcars, aes(x = as.factor(cyl), fill = as.factor(cyl))) +
+geom_bar() +
+scale_fill_discrete_phs(palette = "main-blues") +
+theme(legend.position = "none")
+```
+
+![](README-scale_fill_discrete_phs-1.png)<!-- -->
+
+### scale\_colour\_continuous\_phs
+
+``` r
+# Create a scatter plot using continuous colours from PHS main-purples palette
+library(ggplot2)
+qplot(mpg, wt, data = mtcars, colour = cyl) +
+scale_colour_continuous_phs(palette = "main-purples")
+```
+
+![](README-scale_colour_continuous_phs-1.png)<!-- -->
+
+### scale\_fill\_continuous\_phs
+
+``` r
+# Create a raster chart filled with reversed continuous colours from PHS
+# main-purples palette
+library(ggplot2)
+ggplot(faithfuld, aes(waiting, eruptions)) +
+geom_raster(aes(fill = density)) +
+scale_fill_continuous_phs(palette = "main-purples", direction = -1)
+```
+
+![](README-scale_fill_continuous_phs-1.png)<!-- -->
+
 ## Contributing to phsstyles
 
-At present, the maintainers of this package is [Tina
+At present, the maintainer of this package is [Tina
 Fu](https://github.com/Tina815).
 
 This package is intended to be in continuous development and

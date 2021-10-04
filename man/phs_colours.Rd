@@ -4,10 +4,13 @@
 \alias{phs_colours}
 \title{Return hex value for specific named colours}
 \usage{
-phs_colours(colourname = NULL)
+phs_colours(colourname = NULL, keep_names = FALSE)
 }
 \arguments{
 \item{colourname}{A colour name or vector of colour names.}
+
+\item{keep_names}{whether to keep the colour names with hex values.
+Defaulted as FALSE.}
 }
 \description{
 \code{phs_colours} takes named PHS colours and returns their
