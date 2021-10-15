@@ -12,7 +12,10 @@ phs_palettes
 }
 \description{
 A list grouping PHS colours into palettes.
-It is used within \code{\link{scale_colour_discrete_phs}}.
+It is used within \code{\link{scale_colour_discrete_phs}},
+\code{\link{scale_colour_continuous_phs}},
+\code{\link{scale_fill_discrete_phs}} and
+\code{\link{scale_fill_continuous_phs}}.
 }
 \details{
 It contains PHS colour palettes such as main, main-purples.

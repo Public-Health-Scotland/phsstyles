@@ -39,6 +39,6 @@ phs-purple-80, phs-purple-50, phs-purple-30 and phs-purple-10.
 library(ggplot2)
 ggplot(mtcars, aes(x = as.factor(cyl), fill = as.factor(cyl))) +
 geom_bar() +
-scale_fill_discrete_phs(palette = "main") +
+scale_fill_discrete_phs(palette = "main-blues") +
 theme(legend.position = "none")
 }

@@ -12,7 +12,10 @@ phs_palette_types
 }
 \description{
 A list grouping PHS palettes into PHS palettes types.
-It is used within \code{\link{scale_colour_discrete_phs}}.
+It is used within \code{\link{scale_colour_discrete_phs}},
+\code{\link{scale_colour_continuous_phs}},
+\code{\link{scale_fill_discrete_phs}} and
+\code{\link{scale_fill_continuous_phs}}.
 }
 \details{
 It groups PHS palettes into two types - qualitative and sequential.

@@ -1,3 +1,7 @@
-# phsstyles 0.0.1
+# phsstyles 0.0.1 (2021-10-15)
 
-* Added a `NEWS.md` file to track changes to the package.
+- Initial package release.
+
+- `phs_colours()`, `theme_phs()`, `scale_colour_discrete_phs()`, 
+`scale_colour_continuous_phs()`, `scale_fill_discrete_phs()` and 
+`scale_fill_continuous_phs()` functions added. 

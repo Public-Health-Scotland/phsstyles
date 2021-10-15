@@ -2,12 +2,12 @@
 % Please edit documentation in R/theme_phs.R
 \name{theme_phs}
 \alias{theme_phs}
-\title{Public Health Scotland theme for ggplot2 plots.}
+\title{Public Health Scotland theme for ggplot2 charts.}
 \usage{
 theme_phs()
 }
 \description{
-This adds certain styles to ggplot2 plots that conform with
+This adds certain styles to ggplot2 charts that conform with
 Public Health Scotland style guidelines.
 }
 \examples{

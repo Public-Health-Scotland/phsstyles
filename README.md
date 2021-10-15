@@ -263,8 +263,8 @@ points to take from these are:
 -   Limit code to 80 characters per line
 -   Function documentation should be generated using
     [`roxygen2`](https://github.com/r-lib/roxygen2)
--   All functions should be tested using
-    [`testthat`](https://github.com/r-lib/testthat)
+-   Functions should be tested using
+    [`testthat`](https://github.com/r-lib/testthat) where possible
 -   The package should always pass `devtools::check()`
 
 It’s not necessary to have experience with GitHub or of building an R
