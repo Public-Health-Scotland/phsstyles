@@ -154,8 +154,8 @@ qplot(mpg, wt, data = mtcars) + theme_phs() +
 library(ggplot2)
 df <- mtcars
 df[,'cyl'] <- as.factor(df[,'cyl'])
-qplot(mpg, wt, data = df, colour = cyl) +
-scale_colour_discrete_phs(palette = "main")
+qplot(mpg, wt, data = df, colour = cyl) + 
+  scale_colour_discrete_phs(palette = "main")
 ```
 
 ![](README-scale_colour_discrete_phs-1.png)<!-- -->
@@ -165,10 +165,10 @@ scale_colour_discrete_phs(palette = "main")
 ``` r
 # Create a bar chart filled with colours from PHS main-blues palette
 library(ggplot2)
-ggplot(mtcars, aes(x = as.factor(cyl), fill = as.factor(cyl))) +
-geom_bar() +
-scale_fill_discrete_phs(palette = "main-blues") +
-theme(legend.position = "none")
+ggplot(mtcars, aes(x = as.factor(cyl), fill = as.factor(cyl))) + 
+  geom_bar() + 
+  scale_fill_discrete_phs(palette = "main-blues") + 
+  theme(legend.position = "none")
 ```
 
 ![](README-scale_fill_discrete_phs-1.png)<!-- -->
@@ -178,8 +178,9 @@ theme(legend.position = "none")
 ``` r
 # Create a scatter plot using continuous colours from PHS main-purples palette
 library(ggplot2)
-qplot(mpg, wt, data = mtcars, colour = cyl) +
-scale_colour_continuous_phs(palette = "main-purples")
+qplot(mpg, wt, data = mtcars, colour = cyl) + 
+  scale_colour_continuous_phs(palette = "main-purples") + 
+  theme_phs()
 ```
 
 ![](README-scale_colour_continuous_phs-1.png)<!-- -->
@@ -190,9 +191,9 @@ scale_colour_continuous_phs(palette = "main-purples")
 # Create a raster chart filled with reversed continuous colours from PHS
 # main-purples palette
 library(ggplot2)
-ggplot(faithfuld, aes(waiting, eruptions)) +
-geom_raster(aes(fill = density)) +
-scale_fill_continuous_phs(palette = "main-purples", direction = -1)
+ggplot(faithfuld, aes(waiting, eruptions)) + 
+  geom_raster(aes(fill = density)) + 
+  scale_fill_continuous_phs(palette = "main-purples", direction = -1)
 ```
 
 ![](README-scale_fill_continuous_phs-1.png)<!-- -->
