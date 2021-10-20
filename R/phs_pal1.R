@@ -1,4 +1,4 @@
-phs_pal1 <- function(n, name){
+phs_pal1 <- function(n, name) {
   # load the list phs_palettes
   phs_palettes <- phsstyles::phs_palettes
 
