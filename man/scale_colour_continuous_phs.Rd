@@ -19,11 +19,13 @@ scale_colour_continuous_phs(
 \arguments{
 \item{...}{Additional parameters passed on to the scale type}
 
-\item{type}{"seq" (sequential)}
+\item{type}{"seq" (sequential).
+Please see \code{\link{phs_palette_types}} for more details.}
 
 \item{palette}{a number describing which palette to use within that type.
 Defaulted as 1 referring to the first palette "main-purples" in type "seq".
-It can also be the actual name of the palette e.g. main-purples}
+It can also be the actual name of the palette e.g. main-purples.
+Please see \code{\link{phs_palettes}} for more details.}
 
 \item{direction}{either be 1 (following the palette order) or -1
 (reversing the palette order). Defaulted as 1.}
