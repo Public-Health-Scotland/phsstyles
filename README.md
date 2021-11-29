@@ -3,6 +3,9 @@
 
 # phsstyles
 
+[![GitHub release (latest by
+date)](https://img.shields.io/github/v/release/Public-Health-Scotland/phsstyles)](https://github.com/Public-Health-Scotland/phsstyles/releases/latest)
+
 There are 8 colours for use in [Public Health Scotland
 (PHS)](https://www.publichealthscotland.scot/):
 
@@ -34,9 +37,9 @@ styles in PHS:
 -   `theme_phs()` apply pre-defined PHS theme for charts
 -   `scale_colour_discrete_phs()` apply discrete PHS colour scales for
     charts
--   `scale_fill_discrete_phs()` apply discrete PHS colour filling scales
-    for charts
 -   `scale_colour_continuous_phs()` apply continuous PHS colour scales
+    for charts
+-   `scale_fill_discrete_phs()` apply discrete PHS colour filling scales
     for charts
 -   `scale_fill_continuous_phs()` apply continuous PHS colour filling
     scales for charts
