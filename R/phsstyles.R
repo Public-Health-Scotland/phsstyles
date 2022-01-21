@@ -1,6 +1,6 @@
 #' \code{phsstyles} package
 #'
-#' Standard colour scheme for use in PHS.
+#' Standard graphic styles for use in PHS.
 #'
 #' See the README on
 #' \href{https://github.com/Public-Health-Scotland/phsstyles#readme}{GitHub}.

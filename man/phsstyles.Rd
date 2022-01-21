@@ -5,7 +5,7 @@
 \alias{phsstyles}
 \title{\code{phsstyles} package}
 \description{
-Standard colour scheme for use in PHS.
+Standard graphic styles for use in PHS.
 }
 \details{
 See the README on
