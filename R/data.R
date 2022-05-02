@@ -18,6 +18,23 @@
 #' \code{\link{scale_fill_continuous_phs}}.
 #'
 #' @details It contains PHS colour palettes such as main, main-purples.
+#' The palettes and their types are listed below.
+#'
+#' | **Qualitative** | **Sequential** |
+#' | --- | --- |
+#' | main | x |
+#' | supporting | x |
+#' | all | x |
+#' | x | main-purples |
+#' | x | main-magentas |
+#' | x | main-blues |
+#' | x | main-greens |
+#' | x | supporting-graphites |
+#' | x | supporting-teals |
+#' | x | supporting-liberties |
+#' | x | supporting-rusts |
+#'
+#'@md
 #'
 #' @format A character list
 "phs_palettes"
@@ -31,6 +48,23 @@
 #' \code{\link{scale_fill_continuous_phs}}.
 #'
 #' @details It groups PHS palettes into two types - qualitative and sequential.
+#' The palettes and their types are listed below.
+#'
+#' | **Qualitative** | **Sequential** |
+#' | --- | --- |
+#' | main | x |
+#' | supporting | x |
+#' | all | x |
+#' | x | main-purples |
+#' | x | main-magentas |
+#' | x | main-blues |
+#' | x | main-greens |
+#' | x | supporting-graphites |
+#' | x | supporting-teals |
+#' | x | supporting-liberties |
+#' | x | supporting-rusts |
+#'
+#'@md
 #'
 #' @format A character list
 "phs_palette_types"
