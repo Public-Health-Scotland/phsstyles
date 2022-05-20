@@ -2,9 +2,18 @@
 % Please edit documentation in R/scale_colour_discrete_phs.R
 \name{scale_colour_discrete_phs}
 \alias{scale_colour_discrete_phs}
+\alias{scale_color_discrete_phs}
 \title{Discrete colour scales for PHS}
 \usage{
 scale_colour_discrete_phs(
+  ...,
+  type = "seq",
+  palette = 1,
+  direction = 1,
+  aesthetics = "colour"
+)
+
+scale_color_discrete_phs(
   ...,
   type = "seq",
   palette = 1,
@@ -42,4 +51,8 @@ df[,'cyl'] <- as.factor(df[,'cyl'])
 ggplot2::qplot(mpg, wt, data = df, colour = cyl) +
 scale_colour_discrete_phs(palette = "main")
 
+df <- mtcars
+df[,'cyl'] <- as.factor(df[,'cyl'])
+ggplot2::qplot(mpg, wt, data = df, colour = cyl) +
+scale_color_discrete_phs(palette = "main")
 }
