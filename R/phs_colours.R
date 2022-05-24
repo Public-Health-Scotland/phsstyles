@@ -16,7 +16,6 @@
 #'
 #' phs_colours()
 #'
-#' @return
 #' @export
 phs_colours <- function(colourname = NULL, keep_names = FALSE){
   # load the vector phs_colour_values

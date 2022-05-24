@@ -15,9 +15,6 @@ phs_colors(colourname = NULL, keep_names = FALSE)
 \item{keep_names}{whether to keep the colour names with hex values.
 Defaulted as FALSE.}
 }
-\value{
-
-}
 \description{
 \code{phs_colours} takes named PHS colours and returns their
 hex value \code{\link{phs_colour_values}}
