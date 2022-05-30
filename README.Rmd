@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Public-Health-Scotland/phsstyles)](https://github.com/Public-Health-Scotland/phsstyles/releases/latest)
 
-There are 8 colours for use in [Public Health Scotland (PHS)](https://www.publichealthscotland.scot/):
+There are 8 colours for use in [Public Health Scotland (PHS)](https://www.publichealthscotland.scot/):test
 
 - 4 main colours (PHS purple, PHS magenta, PHS blue and PHS green)
 - 4 supporting colours (PHS graphite, PHS teal, PHS liberty and PHS rust)
