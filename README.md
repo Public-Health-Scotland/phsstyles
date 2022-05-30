@@ -7,7 +7,7 @@
 date)](https://img.shields.io/github/v/release/Public-Health-Scotland/phsstyles)](https://github.com/Public-Health-Scotland/phsstyles/releases/latest)
 
 There are 8 colours for use in [Public Health Scotland
-(PHS)](https://www.publichealthscotland.scot/):
+(PHS)](https://www.publichealthscotland.scot/):test
 
 -   4 main colours (PHS purple, PHS magenta, PHS blue and PHS green)
 -   4 supporting colours (PHS graphite, PHS teal, PHS liberty and PHS
@@ -89,7 +89,7 @@ To access the help file for any of `phsstyles`’ functions, type
 ?phs_colours
 ```
 
-### phs\_colours
+### phs_colours
 
 ``` r
 # Generate hex code for those colours
@@ -117,7 +117,6 @@ phs_colours()
 
 # Create a ggplot chart using this function
 library(ggplot2)
-#> Warning: package 'ggplot2' was built under R version 3.6.3
 phs_bar_chart <- ggplot(mtcars, aes(x = as.factor(cyl), fill = as.factor(cyl))) +  
   geom_bar() +
   scale_fill_manual(values = phs_colours(c("phs-purple", "phs-magenta", "phs-blue"))) +
@@ -128,7 +127,7 @@ phs_bar_chart
 
 ![](man/figures/README-phs_colours-1.png)<!-- -->
 
-### theme\_phs
+### theme_phs
 
 ``` r
 library(ggplot2)
@@ -150,7 +149,7 @@ qplot(mpg, wt, data = mtcars) + theme_phs() +
 
 ![](man/figures/README-theme_phs-2.png)<!-- -->
 
-### scale\_colour\_discrete\_phs
+### scale_colour_discrete_phs
 
 ``` r
 # Create a scatter plot using PHS main colour palette
@@ -163,7 +162,7 @@ qplot(mpg, wt, data = df, colour = cyl) +
 
 ![](man/figures/README-scale_colour_discrete_phs-1.png)<!-- -->
 
-### scale\_fill\_discrete\_phs
+### scale_fill_discrete_phs
 
 ``` r
 # Create a bar chart filled with colours from PHS main-blues palette
@@ -176,7 +175,7 @@ ggplot(mtcars, aes(x = as.factor(cyl), fill = as.factor(cyl))) +
 
 ![](man/figures/README-scale_fill_discrete_phs-1.png)<!-- -->
 
-### scale\_colour\_continuous\_phs
+### scale_colour_continuous_phs
 
 ``` r
 # Create a scatter plot using continuous colours from PHS main-purples palette
@@ -188,7 +187,7 @@ qplot(mpg, wt, data = mtcars, colour = cyl) +
 
 ![](man/figures/README-scale_colour_continuous_phs-1.png)<!-- -->
 
-### scale\_fill\_continuous\_phs
+### scale_fill_continuous_phs
 
 ``` r
 # Create a raster chart filled with reversed continuous colours from PHS
