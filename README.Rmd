@@ -8,7 +8,7 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-"
+  fig.path = "man/figures/README-"
 )
 ```
 
@@ -25,12 +25,12 @@ There are 8 colours for use in [Public Health Scotland (PHS)](https://www.public
 
 Those 8 colours are shown below:
 
-![All eight colours for use in Public Health Scotland](README-eight_colours.png)
+![All eight colours for use in Public Health Scotland](man/figures/README-eight_colours.png)
 
 Each colour with their gradients are shown below:
 
-![Main colours with their gradients](README-main_colours.png)
-![Supporting colours with their gradients](README-supporting_colours.png)
+![Main colours with their gradients](man/figures/README-main_colours.png)
+![Supporting colours with their gradients](man/figures/README-supporting_colours.png)
 
 Please see [Chart and Dashboard Accessibility Guidance](http://spark.publichealthscotland.org/media/2176/chart-and-dashboard-accessibility-guidance-version-12.pdf) for more information.
 

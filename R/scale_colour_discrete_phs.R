@@ -29,3 +29,12 @@ scale_colour_discrete_phs <- function(..., type = "seq", palette = 1,
   ggplot2::discrete_scale(aesthetics, "phs",
                           phs_pal(type, palette, direction), ...)
 }
+
+#' @rdname scale_colour_discrete_phs
+#' @examples
+#' df <- mtcars
+#' df[,'cyl'] <- as.factor(df[,'cyl'])
+#' ggplot2::qplot(mpg, wt, data = df, colour = cyl) +
+#' scale_color_discrete_phs(palette = "main")
+#' @export
+scale_color_discrete_phs <- scale_colour_discrete_phs

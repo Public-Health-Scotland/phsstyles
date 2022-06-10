@@ -19,5 +19,19 @@ It is used within \code{\link{scale_colour_discrete_phs}},
 }
 \details{
 It contains PHS colour palettes such as main, main-purples.
+The palettes and their types are listed below.\tabular{ll}{
+   \strong{Qualitative} \tab \strong{Sequential} \cr
+   main \tab x \cr
+   supporting \tab x \cr
+   all \tab x \cr
+   x \tab main-purples \cr
+   x \tab main-magentas \cr
+   x \tab main-blues \cr
+   x \tab main-greens \cr
+   x \tab supporting-graphites \cr
+   x \tab supporting-teals \cr
+   x \tab supporting-liberties \cr
+   x \tab supporting-rusts \cr
+}
 }
 \keyword{datasets}

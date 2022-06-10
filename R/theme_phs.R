@@ -47,7 +47,8 @@ theme_phs <- function() {
     # setting the margins and removes lines and ticks.
     # In some cases, axis lines and axis ticks are things we would want to have
     # in the chart - the cookbook shows examples of how to do so.
-    axis.title  = ggplot2::element_blank(),
+    axis.title  = ggplot2::element_text(family = fontStyle,
+                                        size = fontSize),
     axis.text   = ggplot2::element_text(family = fontStyle,
                                         size = fontSize),
     axis.text.x = ggplot2::element_text(size  = fontSize, # X-Axis text

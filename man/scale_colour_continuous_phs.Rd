@@ -2,9 +2,22 @@
 % Please edit documentation in R/scale_colour_continuous_phs.R
 \name{scale_colour_continuous_phs}
 \alias{scale_colour_continuous_phs}
+\alias{scale_color_continuous_phs}
 \title{Continuous colour scales for PHS}
 \usage{
 scale_colour_continuous_phs(
+  ...,
+  type = "seq",
+  palette = 1,
+  direction = 1,
+  values = NULL,
+  space = "Lab",
+  na.value = "grey50",
+  guide = "colourbar",
+  aesthetics = "colour"
+)
+
+scale_color_continuous_phs(
   ...,
   type = "seq",
   palette = 1,
@@ -57,4 +70,6 @@ phs-purple-50, phs-purple-30 and phs-purple-10.
 ggplot2::qplot(mpg, wt, data = mtcars, colour = cyl) +
 scale_colour_continuous_phs(palette = "main-purples")
 
+ggplot2::qplot(mpg, wt, data = mtcars, colour = cyl) +
+scale_color_continuous_phs(palette = "main-purples")
 }

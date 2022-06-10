@@ -2,9 +2,12 @@
 % Please edit documentation in R/phs_colours.R
 \name{phs_colours}
 \alias{phs_colours}
+\alias{phs_colors}
 \title{Return hex value for specific named colours}
 \usage{
 phs_colours(colourname = NULL, keep_names = FALSE)
+
+phs_colors(colourname = NULL, keep_names = FALSE)
 }
 \arguments{
 \item{colourname}{A colour name or vector of colour names.}
@@ -26,4 +29,9 @@ phs_colours(c("phs-blue", "phs-purple"))
 
 phs_colours()
 
+phs_colors("phs-blue")
+
+phs_colors(c("phs-blue", "phs-purple"))
+
+phs_colors()
 }

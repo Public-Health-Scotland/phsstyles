@@ -36,3 +36,13 @@ phs_colours <- function(colourname = NULL, keep_names = FALSE){
       phs_colour_values[colourname]
   }
 }
+
+#' @rdname phs_colours
+#' @examples
+#' phs_colors("phs-blue")
+#'
+#' phs_colors(c("phs-blue", "phs-purple"))
+#'
+#' phs_colors()
+#' @export
+phs_colors <- phs_colours

@@ -64,3 +64,10 @@ scale_colour_continuous_phs <- function(..., type = "seq", palette = 1,
                             na.value = na.value, guide = guide, ...)
 
 }
+
+#' @rdname scale_colour_continuous_phs
+#' @examples
+#' ggplot2::qplot(mpg, wt, data = mtcars, colour = cyl) +
+#' scale_color_continuous_phs(palette = "main-purples")
+#' @export
+scale_color_continuous_phs <- scale_colour_continuous_phs
