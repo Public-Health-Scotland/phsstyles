@@ -34,7 +34,7 @@
 #' | x | supporting-liberties |
 #' | x | supporting-rusts |
 #'
-#'@md
+#' @md
 #'
 #' @format A character list
 "phs_palettes"
@@ -64,7 +64,7 @@
 #' | x | supporting-liberties |
 #' | x | supporting-rusts |
 #'
-#'@md
+#' @md
 #'
 #' @format A character list
 "phs_palette_types"

@@ -8,10 +8,9 @@ phs_pal <- function(type = "seq", palette = 1, direction = 1,
     if (direction == -1) {
       pal <- rev(pal)
     }
-    if(colour_names == TRUE){
+    if (colour_names == TRUE) {
       pal
-    }
-    else{
+    } else {
       as.vector(pal)
     }
   }
