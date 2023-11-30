@@ -11,6 +11,10 @@ NULL
 
 # Stops notes from appearing in R CMD check because of undefined global
 # variables
-if (getRversion() >= "2.15.1") utils::globalVariables(c("phs_colour_values",
-                                                        "phs_palette_types",
-                                                        "phs_palettes"))
+if (getRversion() >= "2.15.1") {
+  utils::globalVariables(c(
+    "phs_colour_values",
+    "phs_palette_types",
+    "phs_palettes"
+  ))
+}

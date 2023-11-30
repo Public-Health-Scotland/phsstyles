@@ -14,7 +14,13 @@ knitr::opts_chunk$set(
 
 # phsstyles
 
+<!-- badges: start -->
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Public-Health-Scotland/phsstyles)](https://github.com/Public-Health-Scotland/phsstyles/releases/latest)
+
+[![Codecov test coverage](https://codecov.io/gh/Public-Health-Scotland/phsstyles/branch/master/graph/badge.svg)](https://app.codecov.io/gh/Public-Health-Scotland/phsstyles?branch=master)
+
+[![R-CMD-check](https://github.com/Public-Health-Scotland/phsstyles/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Public-Health-Scotland/phsstyles/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
 
 There are 8 colours for use in [Public Health Scotland (PHS)](https://www.publichealthscotland.scot/):
 
@@ -105,7 +111,7 @@ library(ggplot2)
 # Apply PHS theme to a chart
 qplot(mpg, wt, data = mtcars) + theme_phs()
 
-# Overwirte a feature (e.g. remove vertical gridlines and add horizontal ones)
+# Overwrite a feature (e.g. remove vertical gridlines and add horizontal ones)
 qplot(mpg, wt, data = mtcars) + theme_phs() +
   theme(panel.grid.major.x = element_blank(), 
         panel.grid.major.y = element_line(colour = 

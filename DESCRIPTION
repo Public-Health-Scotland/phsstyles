@@ -15,6 +15,7 @@ Imports:
     ggplot2, 
     scales
 Suggests: 
+    covr,
     testthat (>= 3.0.0)
 Encoding: UTF-8
 LazyData: true
