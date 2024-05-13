@@ -1,3 +1,9 @@
+# phsstyles (Development version)
+
+* Exported `phs_colours`, `phs_palettes` and `phs_palette_types`. 
+This now allows users to call phsstyles functions 
+without needing to load the package.
+
 # phsstyles 0.1.0 (2021-10-15)
 
 - Initial package release.

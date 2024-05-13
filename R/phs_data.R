@@ -1,16 +1,56 @@
-### This script creates the list of standard colours in Public Health Scotland
-### based on Chart and Dashboard Accessibility Guidance.
-###
-### The resulting file is used inside the phs_colours function and is made
-### available to users of the package via phsstyles::phs_colour_values
-###
-### This script should be re-run prior to every package release, to ensure the
-### most up-to-date information provided by Chart and Dashboard Accessibility
-### Guidance is used
-###
-### Any substantial changes to the data should be noted in the section
-### pertaining to the latest release in the NEWS.md file
-
+#' PHS colours and colour palettes
+#'
+#' @details
+#'
+#' ### PHS colours
+#'
+#' PHS colour names and their corresponding hex codes.
+#'
+#' `phs_colour_values` is a character vector that contains PHS colour names
+#' in the PHS chart and dashboard guidance, such as PHS blue.
+#'
+#' ### PHS palettes
+#'
+#' A list grouping PHS colours into palettes.
+#' It is used within \code{\link{scale_colour_discrete_phs}},
+#' \code{\link{scale_colour_continuous_phs}},
+#' \code{\link{scale_fill_discrete_phs}} and
+#' \code{\link{scale_fill_continuous_phs}}.
+#'
+#' It contains PHS colour palettes such as main, main-purples.
+#'
+#' ### PHS palette types
+#'
+#' A list grouping PHS palettes into PHS palette types.
+#' It is used within \code{\link{scale_colour_discrete_phs}},
+#' \code{\link{scale_colour_continuous_phs}},
+#' \code{\link{scale_fill_discrete_phs}} and
+#' \code{\link{scale_fill_continuous_phs}}.
+#'
+#' It groups PHS palettes into two types - qualitative and sequential.
+#'
+#' The palettes and their types are listed below.
+#'
+#' | **Qualitative** | **Sequential** |
+#' | --- | --- |
+#' | main | x |
+#' | supporting | x |
+#' | all | x |
+#' | x | main-purples |
+#' | x | main-magentas |
+#' | x | main-blues |
+#' | x | main-greens |
+#' | x | supporting-graphites |
+#' | x | supporting-teals |
+#' | x | supporting-liberties |
+#' | x | supporting-rusts |
+#'
+#' @source \url{http://spark.publichealthscotland.org/media/2176/chart-and-dashboard-accessibility-guidance-version-12.pdf}
+#'
+#'
+#' @rdname phs_data
+#' @format `phs_colour_values` - A `character` vector of PHS colours and hex codes.
+#' @export
 phs_colour_values <- c(
   # main palette, for qualitative plots
   "phs-purple" = "#3F3685",
@@ -57,56 +97,58 @@ phs_colour_values <- c(
   "phs-rust-30" = "#EEC4BA",
   "phs-rust-10" = "#F9EBE8")
 
+#' @rdname phs_data
+#' @format `phs_colour_palettes` - A `list` of PHS colours grouped into palettes.
+#' @export
 phs_palettes <- list(
-  "main" = phsstyles::phs_colours(c("phs-purple", "phs-magenta",
+  "main" = phs_colours(c("phs-purple", "phs-magenta",
                                   "phs-blue", "phs-green"), keep_names = TRUE),
-  "supporting" = phsstyles::phs_colours(c("phs-graphite", "phs-teal",
+  "supporting" = phs_colours(c("phs-graphite", "phs-teal",
                                         "phs-liberty", "phs-rust"),
                                         keep_names = TRUE),
-  "all" = phsstyles::phs_colours(c("phs-purple", "phs-magenta",
+  "all" = phs_colours(c("phs-purple", "phs-magenta",
                                  "phs-blue", "phs-green",
                                  "phs-graphite", "phs-teal",
                                  "phs-liberty", "phs-rust"), keep_names = TRUE),
-  "main-purples" = phsstyles::phs_colours(c("phs-purple", "phs-purple-80",
+  "main-purples" = phs_colours(c("phs-purple", "phs-purple-80",
                                           "phs-purple-50", "phs-purple-30",
                                           "phs-purple-10"), keep_names = TRUE),
-  "main-magentas" = phsstyles::phs_colours(c("phs-magenta", "phs-magenta-80",
+  "main-magentas" = phs_colours(c("phs-magenta", "phs-magenta-80",
                                            "phs-magenta-50", "phs-magenta-30",
                                            "phs-magenta-10"),
                                            keep_names = TRUE),
-  "main-blues" = phsstyles::phs_colours(c("phs-blue", "phs-blue-80",
+  "main-blues" = phs_colours(c("phs-blue", "phs-blue-80",
                                         "phs-blue-50", "phs-blue-30",
                                         "phs-blue-10"), keep_names = TRUE),
-  "main-greens" = phsstyles::phs_colours(c("phs-green", "phs-green-80",
+  "main-greens" = phs_colours(c("phs-green", "phs-green-80",
                                          "phs-green-50", "phs-green-30",
                                          "phs-green-10"), keep_names = TRUE),
-  "supporting-graphites" = phsstyles::phs_colours(c("phs-graphite",
+  "supporting-graphites" = phs_colours(c("phs-graphite",
                                                   "phs-graphite-80",
                                                   "phs-graphite-50",
                                                   "phs-graphite-30",
                                                   "phs-graphite-10"),
                                                   keep_names = TRUE),
-  "supporting-teals" = phsstyles::phs_colours(c("phs-teal", "phs-teal-80",
+  "supporting-teals" = phs_colours(c("phs-teal", "phs-teal-80",
                                               "phs-teal-50", "phs-teal-30",
                                               "phs-teal-10"),
                                               keep_names = TRUE),
-  "supporting-liberties" = phsstyles::phs_colours(c("phs-liberty",
+  "supporting-liberties" = phs_colours(c("phs-liberty",
                                                   "phs-liberty-80",
                                                   "phs-liberty-50",
                                                   "phs-liberty-30",
                                                   "phs-liberty-10"),
                                                   keep_names = TRUE),
-  "supporting-rusts" = phsstyles::phs_colours(c("phs-rust", "phs-rust-80",
+  "supporting-rusts" = phs_colours(c("phs-rust", "phs-rust-80",
                                               "phs-rust-50", "phs-rust-30",
                                               "phs-rust-10"),
                                               keep_names = TRUE))
-
+#' @rdname phs_data
+#' @format `phs_palette_types` - A `list` of PHS palettes grouped into palette types.
+#' @export
 phs_palette_types <- list(
   qual = c("main", "supporting", "all"),
   seq = c("main-purples", "main-magentas",
           "main-blues", "main-greens",
           "supporting-graphites", "supporting-teals",
           "supporting-liberties", "supporting-rusts"))
-
-usethis::use_data(phs_colour_values, phs_palettes, phs_palette_types,
-                  overwrite = TRUE)

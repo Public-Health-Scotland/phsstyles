@@ -18,8 +18,6 @@
 #'
 #' @export
 phs_colours <- function(colourname = NULL, keep_names = FALSE){
-  # load the vector phs_colour_values
-  phs_colour_values <- phsstyles::phs_colour_values
 
   if (is.null(colourname)) {
     phs_colour_values

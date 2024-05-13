@@ -1,5 +1,5 @@
 test_that("All available colours are shown when colourname is NULL", {
-  expect_equal(phs_colours(), phsstyles::phs_colour_values)
+  expect_equal(phs_colours(), phs_colour_values)
 })
 
 test_that("Hex colour is generated for specific named colours", {
