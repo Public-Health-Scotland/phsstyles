@@ -2,6 +2,7 @@
 % Please edit documentation in R/phsstyles.R
 \docType{package}
 \name{phsstyles}
+\alias{phsstyles-package}
 \alias{phsstyles}
 \title{\code{phsstyles} package}
 \description{
@@ -10,4 +11,22 @@ Standard graphic styles for use in PHS.
 \details{
 See the README on
 \href{https://github.com/Public-Health-Scotland/phsstyles#readme}{GitHub}.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/Public-Health-Scotland/phsstyles}
+  \item \url{https://public-health-scotland.github.io/phsstyles/}
+  \item Report bugs at \url{https://github.com/Public-Health-Scotland/phsstyles/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Tina Fu \email{Yuyan.Fu2@phs.scot}
+
+Authors:
+\itemize{
+  \item Bob Taylor \email{bob.taylor2@phs.scot}
+}
+
 }

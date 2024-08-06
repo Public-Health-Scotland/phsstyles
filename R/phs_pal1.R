@@ -1,7 +1,4 @@
 phs_pal1 <- function(n, name) {
-  # load the list phs_palettes
-  phs_palettes <- phsstyles::phs_palettes
-
   if (!(name %in% names(phs_palettes))) {
     stop(paste(name,"is not a valid palette name.\n"))
   }
