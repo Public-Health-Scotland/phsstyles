@@ -1,15 +1,8 @@
-# phsstyles (Development version)
+# phsstyles 0.1.2 (2024-08-06)
 
-* Exported `phs_colours`, `phs_palettes` and `phs_palette_types`. 
+- Exported `phs_colour_values`, `phs_palettes` and `phs_palette_types`. 
 This now allows users to call phsstyles functions 
 without needing to load the package.
-
-# phsstyles 0.1.0 (2021-10-15)
-
-- Initial package release.
-- `phs_colours()`, `theme_phs()`, `scale_colour_discrete_phs()`, 
-`scale_colour_continuous_phs()`, `scale_fill_discrete_phs()` and 
-`scale_fill_continuous_phs()` functions added. 
 
 # phsstyles 0.1.1 (2022-05-30)
 
@@ -20,3 +13,11 @@ without needing to load the package.
 - Update the documentation for `phs_palettes` and `phs_palette_types`. 
 
 - Create a [pkgdown webpage](https://public-health-scotland.github.io/phsstyles/) so that readme, help pages and news page are integrated. 
+
+# phsstyles 0.1.0 (2021-10-15)
+
+- Initial package release.
+- `phs_colours()`, `theme_phs()`, `scale_colour_discrete_phs()`, 
+`scale_colour_continuous_phs()`, `scale_fill_discrete_phs()` and 
+`scale_fill_continuous_phs()` functions added. 
+
