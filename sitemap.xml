@@ -1,54 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/404.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/reference/phs_colour_values.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/reference/phs_colours.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/reference/phs_palette_types.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/reference/phs_palettes.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/reference/phsstyles.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/reference/scale_colour_continuous_phs.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/reference/scale_colour_discrete_phs.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/reference/scale_fill_continuous_phs.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/reference/scale_fill_discrete_phs.html</loc>
-  </url>
-  <url>
-    <loc>https://public-health-scotland.github.io/phsstyles/reference/theme_phs.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://public-health-scotland.github.io/phsstyles/404.html</loc></url>
+<url><loc>https://public-health-scotland.github.io/phsstyles/LICENSE-text.html</loc></url>
+<url><loc>https://public-health-scotland.github.io/phsstyles/LICENSE.html</loc></url>
+<url><loc>https://public-health-scotland.github.io/phsstyles/authors.html</loc></url>
+<url><loc>https://public-health-scotland.github.io/phsstyles/index.html</loc></url>
+<url><loc>https://public-health-scotland.github.io/phsstyles/news/index.html</loc></url>
+<url><loc>https://public-health-scotland.github.io/phsstyles/reference/index.html</loc></url>
+<url><loc>https://public-health-scotland.github.io/phsstyles/reference/phs_colours.html</loc></url>
+<url><loc>https://public-health-scotland.github.io/phsstyles/reference/phs_data.html</loc></url>
+<url><loc>https://public-health-scotland.github.io/phsstyles/reference/phsstyles.html</loc></url>
+<url><loc>https://public-health-scotland.github.io/phsstyles/reference/scale_colour_continuous_phs.html</loc></url>
+<url><loc>https://public-health-scotland.github.io/phsstyles/reference/scale_colour_discrete_phs.html</loc></url>
+<url><loc>https://public-health-scotland.github.io/phsstyles/reference/scale_fill_continuous_phs.html</loc></url>
+<url><loc>https://public-health-scotland.github.io/phsstyles/reference/scale_fill_discrete_phs.html</loc></url>
+<url><loc>https://public-health-scotland.github.io/phsstyles/reference/theme_phs.html</loc></url>
 </urlset>
+
