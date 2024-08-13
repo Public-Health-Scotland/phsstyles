@@ -49,7 +49,8 @@
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header"><h1 id="phsstyles">phsstyles<a class="anchor" aria-label="anchor" href="#phsstyles"></a>
 </h1></div>
-<p><a href="https://github.com/Public-Health-Scotland/phsstyles/releases/latest" class="external-link"><img src="https://img.shields.io/github/v/release/Public-Health-Scotland/phsstyles" alt="GitHub release (latest by date)"></a></p>
+<!-- badges: start -->
+
 <p>There are 8 colours for use in <a href="https://www.publichealthscotland.scot/" class="external-link">Public Health Scotland (PHS)</a>:</p>
 <ul>
 <li>4 main colours (PHS purple, PHS magenta, PHS blue and PHS green)</li>
@@ -57,10 +58,9 @@
 <li>Within each colour there are 5 gradients (e.g. for PHS purple, it contains 100%, 80%, 50%, 30% and 10%)</li>
 </ul>
 <p>Those 8 colours are shown below:</p>
-<div class="float">
-<img src="reference/figures/README-eight_colours.png" alt="All eight colours for use in Public Health Scotland"><div class="figcaption">All eight colours for use in Public Health Scotland</div>
-</div>
-<p>Each colour with their gradients are shown below:</p>
+<figure><img src="reference/figures/README-eight_colours.png" alt="All eight colours for use in Public Health Scotland"><figcaption aria-hidden="true">
+All eight colours for use in Public Health Scotland
+</figcaption></figure><p>Each colour with their gradients are shown below:</p>
 <p><img src="reference/figures/README-main_colours.png" alt="Main colours with their gradients"><img src="reference/figures/README-supporting_colours.png" alt="Supporting colours with their gradients"></p>
 <p>Please see <a href="http://spark.publichealthscotland.org/media/2176/chart-and-dashboard-accessibility-guidance-version-12.pdf" class="external-link">Chart and Dashboard Accessibility Guidance</a> for more information.</p>
 <p><code>phsstyles</code> contains functions for creating graphics with standard styles in PHS:</p>
@@ -146,10 +146,15 @@
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
 <span><span class="co"># Apply PHS theme to a chart</span></span>
-<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/qplot.html" class="external-link">qplot</a></span><span class="op">(</span><span class="va">mpg</span>, <span class="va">wt</span>, data <span class="op">=</span> <span class="va">mtcars</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="reference/theme_phs.html">theme_phs</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/qplot.html" class="external-link">qplot</a></span><span class="op">(</span><span class="va">mpg</span>, <span class="va">wt</span>, data <span class="op">=</span> <span class="va">mtcars</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="reference/theme_phs.html">theme_phs</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Warning: `qplot()` was deprecated in ggplot2 3.4.0.</span></span>
+<span><span class="co">#&gt; This warning is displayed once every 8 hours.</span></span>
+<span><span class="co">#&gt; Call `lifecycle::last_lifecycle_warnings()` to see where this warning was</span></span>
+<span><span class="co">#&gt; generated.</span></span></code></pre></div>
 <p><img src="reference/figures/README-theme_phs-1.png"><!-- --></p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># Overwirte a feature (e.g. remove vertical gridlines and add horizontal ones)</span></span>
+<code class="sourceCode R"><span></span>
+<span><span class="co"># Overwirte a feature (e.g. remove vertical gridlines and add horizontal ones)</span></span>
 <span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/qplot.html" class="external-link">qplot</a></span><span class="op">(</span><span class="va">mpg</span>, <span class="va">wt</span>, data <span class="op">=</span> <span class="va">mtcars</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="reference/theme_phs.html">theme_phs</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>panel.grid.major.x <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_blank</a></span><span class="op">(</span><span class="op">)</span>, </span>
 <span>        panel.grid.major.y <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_line</a></span><span class="op">(</span>colour <span class="op">=</span> </span>
@@ -264,7 +269,12 @@
 </ul>
 </div>
 
-
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/Public-Health-Scotland/phsstyles/tags" class="external-link"><img src="https://img.shields.io/github/v/tag/Public-Health-Scotland/phsstyles" alt="GitHub tag (latest by date)"></a></li>
+</ul>
+</div>
 
   </aside>
 </div>
