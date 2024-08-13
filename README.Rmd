@@ -14,7 +14,9 @@ knitr::opts_chunk$set(
 
 # phsstyles
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Public-Health-Scotland/phsstyles)](https://github.com/Public-Health-Scotland/phsstyles/releases/latest)
+<!-- badges: start -->
+[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/Public-Health-Scotland/phsstyles)](https://github.com/Public-Health-Scotland/phsstyles/tags)
+<!-- badges: end -->
 
 There are 8 colours for use in [Public Health Scotland (PHS)](https://www.publichealthscotland.scot/):
 

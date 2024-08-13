@@ -3,22 +3,29 @@
 
 # phsstyles
 
-[![GitHub release (latest by
-date)](https://img.shields.io/github/v/release/Public-Health-Scotland/phsstyles)](https://github.com/Public-Health-Scotland/phsstyles/releases/latest)
+<!-- badges: start -->
+
+[![GitHub tag (latest by
+date)](https://img.shields.io/github/v/tag/Public-Health-Scotland/phsstyles)](https://github.com/Public-Health-Scotland/phsstyles/tags)
+<!-- badges: end -->
 
 There are 8 colours for use in [Public Health Scotland
 (PHS)](https://www.publichealthscotland.scot/):
 
--   4 main colours (PHS purple, PHS magenta, PHS blue and PHS green)
--   4 supporting colours (PHS graphite, PHS teal, PHS liberty and PHS
-    rust)
--   Within each colour there are 5 gradients (e.g. for PHS purple, it
-    contains 100%, 80%, 50%, 30% and 10%)
+- 4 main colours (PHS purple, PHS magenta, PHS blue and PHS green)
+- 4 supporting colours (PHS graphite, PHS teal, PHS liberty and PHS
+  rust)
+- Within each colour there are 5 gradients (e.g. for PHS purple, it
+  contains 100%, 80%, 50%, 30% and 10%)
 
 Those 8 colours are shown below:
 
-![All eight colours for use in Public Health
-Scotland](man/figures/README-eight_colours.png)
+<figure>
+<img src="man/figures/README-eight_colours.png"
+alt="All eight colours for use in Public Health Scotland" />
+<figcaption aria-hidden="true">All eight colours for use in Public
+Health Scotland</figcaption>
+</figure>
 
 Each colour with their gradients are shown below:
 
@@ -33,16 +40,16 @@ for more information.
 `phsstyles` contains functions for creating graphics with standard
 styles in PHS:
 
--   `phs_colours()` returns hex value for specific named colours
--   `theme_phs()` apply pre-defined PHS theme for charts
--   `scale_colour_discrete_phs()` apply discrete PHS colour scales for
-    charts
--   `scale_colour_continuous_phs()` apply continuous PHS colour scales
-    for charts
--   `scale_fill_discrete_phs()` apply discrete PHS colour filling scales
-    for charts
--   `scale_fill_continuous_phs()` apply continuous PHS colour filling
-    scales for charts
+- `phs_colours()` returns hex value for specific named colours
+- `theme_phs()` apply pre-defined PHS theme for charts
+- `scale_colour_discrete_phs()` apply discrete PHS colour scales for
+  charts
+- `scale_colour_continuous_phs()` apply continuous PHS colour scales for
+  charts
+- `scale_fill_discrete_phs()` apply discrete PHS colour filling scales
+  for charts
+- `scale_fill_continuous_phs()` apply continuous PHS colour filling
+  scales for charts
 
 `phsstyles` can be used on both the
 [server](https://rstudio.nhsnss.scot.nhs.uk/) and desktop versions of
@@ -133,11 +140,16 @@ phs_bar_chart
 library(ggplot2)
 # Apply PHS theme to a chart
 qplot(mpg, wt, data = mtcars) + theme_phs()
+#> Warning: `qplot()` was deprecated in ggplot2 3.4.0.
+#> This warning is displayed once every 8 hours.
+#> Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
+#> generated.
 ```
 
 ![](man/figures/README-theme_phs-1.png)<!-- -->
 
 ``` r
+
 # Overwirte a feature (e.g. remove vertical gridlines and add horizontal ones)
 qplot(mpg, wt, data = mtcars) + theme_phs() +
   theme(panel.grid.major.x = element_blank(), 
@@ -258,17 +270,17 @@ guide](https://style.tidyverse.org/) and the [rOpenSci package
 development guide](https://devguide.ropensci.org/). The most pertinent
 points to take from these are:
 
--   All function names should be in lower case, with words separated by
-    an underscore
--   Put a space after a comma, never before
--   Put a space before and after infix operators such as `<-`, `==` and
-    `+`
--   Limit code to 80 characters per line
--   Function documentation should be generated using
-    [`roxygen2`](https://github.com/r-lib/roxygen2)
--   Functions should be tested using
-    [`testthat`](https://github.com/r-lib/testthat) where possible
--   The package should always pass `devtools::check()`
+- All function names should be in lower case, with words separated by an
+  underscore
+- Put a space after a comma, never before
+- Put a space before and after infix operators such as `<-`, `==` and
+  `+`
+- Limit code to 80 characters per line
+- Function documentation should be generated using
+  [`roxygen2`](https://github.com/r-lib/roxygen2)
+- Functions should be tested using
+  [`testthat`](https://github.com/r-lib/testthat) where possible
+- The package should always pass `devtools::check()`
 
 It’s not necessary to have experience with GitHub or of building an R
 package to contribute to `phsstyles`. If you wish to contribute code
