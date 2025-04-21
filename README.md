@@ -9,6 +9,8 @@
 date)](https://img.shields.io/github/v/tag/Public-Health-Scotland/phsstyles)](https://github.com/Public-Health-Scotland/phsstyles/tags)
 <!-- badges: end -->
 
+## Overview
+
 There are 8 colours for use in [Public Health Scotland
 (PHS)](https://www.publichealthscotland.scot/):
 
@@ -18,20 +20,1693 @@ There are 8 colours for use in [Public Health Scotland
 - Within each colour there are 5 gradients (e.g. for PHS purple, it
   contains 100%, 80%, 50%, 30% and 10%)
 
-Those 8 colours are shown below:
+## Colour palettes
 
-<figure>
-<img src="man/figures/README-eight_colours.png"
-alt="All eight colours for use in Public Health Scotland" />
-<figcaption aria-hidden="true">All eight colours for use in Public
-Health Scotland</figcaption>
-</figure>
+The [PHS brand identity
+guidelines](%22https://spark.publichealthscotland.org/corporate-guidance/templates-branding-accessibility-and-style-guide/branding/brand-guidelines/%22)
+provide corporate colour palettes, namely “main” and “supporting”, with
+eight overall colours available:
 
-Each colour with their gradients are shown below:
+- **Main colour palette**: PHS purple, PHS magenta, PHS blue, and PHS
+  green
+- **Supporting colour palette**: PHS graphite, PHS teal, PHS liberty,
+  and PHS rust
 
-![Main colours with their
-gradients](man/figures/README-main_colours.png) ![Supporting colours
-with their gradients](man/figures/README-supporting_colours.png)
+The guidelines also include recommendations, such as:
+
+- “PHS purple should not be used for text because there is a danger the
+  text will be mistaken for a visited link”
+- “PHS green should not be used for text against a white background as
+  the contrast ratio is too low”
+- “Tints and tones of the corporate colours can be used for borders,
+  backgrounds and hover states of buttons and links”
+
+Within `{phsstyles}`, the palettes are available individually, as `main`
+or `supporting`, or combined in the `all` palette.
+
+*Hint: the colour names and hex values can be copied by clicking on them
+in the tables below.*
+
+<style>
+  .palette-section {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 1em;
+  }
+  .palette-block {
+    flex: 1 1 45%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .phs-table {
+    border-collapse: collapse;
+    margin-top: 0.5em;
+    width: auto;
+    min-width: 280px;
+  }
+  .phs-table th, .phs-table td {
+    border: 1px solid #ddd;
+    padding: 4px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .phs-table td p {
+    margin: 0;
+  }
+  .phs-table th:nth-child(1),
+  .phs-table td:nth-child(1) {
+    width: 160px;
+  }
+  .phs-table th:nth-child(2),
+  .phs-table td:nth-child(2) {
+    width: 100px;
+  }
+  .swatch-box {
+    width: 90px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .copy-target {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .copied-tooltip {
+    visibility: hidden;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+    z-index: 10;
+  }
+  .copy-target.copied .copied-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
+<script>
+  function copyText(element) {
+    const text = element.innerText.trim();
+    navigator.clipboard.writeText(text).then(() => {
+      element.classList.add("copied");
+      setTimeout(() => element.classList.remove("copied"), 1000);
+    });
+  }
+</script>
+<h4 style="text-align:center;">
+<code>all</code>
+</h4>
+<p style="text-align:center;">
+The <code>all</code> palette is made up of both the <code>main</code>
+and <code>supporting</code> palettes as below.
+</p>
+
+<div class="palette-section">
+
+<div class="palette-block">
+
+<h4>
+<code>main</code>
+</h4>
+<table class="phs-table">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Hex
+</th>
+<th>
+Swatch
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-purple<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#3F3685<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #3F3685;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-magenta<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#9B4393<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #9B4393;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-blue<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#0078D4<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #0078D4;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-green<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#83BB26<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #83BB26;">
+
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="palette-block">
+
+<h4>
+<code>supporting</code>
+</h4>
+<table class="phs-table">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Hex
+</th>
+<th>
+Swatch
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-graphite<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#948DA3<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #948DA3;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-teal<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#1E7F84<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #1E7F84;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-liberty<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#6B5C85<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #6B5C85;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-rust<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#C73918<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #C73918;">
+
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<h3>
+Gradient palettes
+</h3>
+<p>
+Each colour is also available as a gradient palette, providing suitable
+gradient tints set at 100%, 80%, 50%, 30%, and 10%.
+</p>
+
+<div class="palette-section">
+
+<div class="palette-block">
+
+<h4 style="text-align:center;">
+<code>main-purples</code>
+</h4>
+<table class="phs-table">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Hex
+</th>
+<th>
+Swatch
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-purple<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#3F3685<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #3F3685;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-purple-80<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#655E9D<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #655E9D;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-purple-50<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#9F9BC2<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #9F9BC2;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-purple-30<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#C5C3DA<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #C5C3DA;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-purple-10<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#ECEBF3<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #ECEBF3;">
+
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="palette-block">
+
+<h4 style="text-align:center;">
+<code>main-magentas</code>
+</h4>
+<table class="phs-table">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Hex
+</th>
+<th>
+Swatch
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-magenta<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#9B4393<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #9B4393;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-magenta-80<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#AF69A9<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #AF69A9;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-magenta-50<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#CDA1C9<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #CDA1C9;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-magenta-30<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#E1C7DF<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #E1C7DF;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-magenta-10<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#F5ECF4<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #F5ECF4;">
+
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div class="palette-section">
+
+<div class="palette-block">
+
+<h4 style="text-align:center;">
+<code>main-blues</code>
+</h4>
+<table class="phs-table">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Hex
+</th>
+<th>
+Swatch
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-blue<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#0078D4<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #0078D4;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-blue-80<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#3393DD<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #3393DD;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-blue-50<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#80BCEA<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #80BCEA;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-blue-30<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#B3D7F2<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #B3D7F2;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-blue-10<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#E6F2FB<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #E6F2FB;">
+
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="palette-block">
+
+<h4 style="text-align:center;">
+<code>main-greens</code>
+</h4>
+<table class="phs-table">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Hex
+</th>
+<th>
+Swatch
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-green<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#83BB26<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #83BB26;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-green-80<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#9CC951<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #9CC951;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-green-50<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#C1DD93<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #C1DD93;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-green-30<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#DAEBBE<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #DAEBBE;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-green-10<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#F3F8E9<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #F3F8E9;">
+
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div class="palette-section">
+
+<div class="palette-block">
+
+<h4 style="text-align:center;">
+<code>supporting-graphites</code>
+</h4>
+<table class="phs-table">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Hex
+</th>
+<th>
+Swatch
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-graphite<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#948DA3<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #948DA3;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-graphite-80<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#A9A4B5<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #A9A4B5;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-graphite-50<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#CAC6D1<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #CAC6D1;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-graphite-30<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#DFDDE3<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #DFDDE3;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-graphite-10<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#F4F4F6<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #F4F4F6;">
+
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="palette-block">
+
+<h4 style="text-align:center;">
+<code>supporting-teals</code>
+</h4>
+<table class="phs-table">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Hex
+</th>
+<th>
+Swatch
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-teal<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#1E7F84<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #1E7F84;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-teal-80<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#4B999D<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #4B999D;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-teal-50<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#8FBFC2<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #8FBFC2;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-teal-30<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#BCD9DA<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #BCD9DA;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-teal-10<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#E9F2F3<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #E9F2F3;">
+
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
+
+<div class="palette-section">
+
+<div class="palette-block">
+
+<h4 style="text-align:center;">
+<code>supporting-liberties</code>
+</h4>
+<table class="phs-table">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Hex
+</th>
+<th>
+Swatch
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-liberty<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#6B5C85<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #6B5C85;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-liberty-80<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#897D9D<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #897D9D;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-liberty-50<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#B5AEC2<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #B5AEC2;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-liberty-30<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#D3CEDA<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #D3CEDA;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-liberty-10<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#F0EFF3<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #F0EFF3;">
+
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="palette-block">
+
+<h4 style="text-align:center;">
+<code>supporting-rusts</code>
+</h4>
+<table class="phs-table">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Hex
+</th>
+<th>
+Swatch
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-rust<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#C73918<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #C73918;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-rust-80<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#D26146<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #D26146;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-rust-50<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#E39C8C<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #E39C8C;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-rust-30<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#EEC4BA<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #EEC4BA;">
+
+</div>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-rust-10<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#F9EBE8<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #F9EBE8;">
+
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
 
 Please see [Chart and Dashboard Accessibility
 Guidance](http://spark.publichealthscotland.org/media/2176/chart-and-dashboard-accessibility-guidance-version-12.pdf)
