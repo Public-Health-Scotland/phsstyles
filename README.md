@@ -128,6 +128,7 @@ in the tables below.*
     opacity: 1;
   }
 </style>
+
 <script>
   function copyText(element) {
     const text = element.innerText.trim();
@@ -137,10 +138,14 @@ in the tables below.*
     });
   }
 </script>
+
 <h4 style="text-align:center;">
+
 <code>all</code>
 </h4>
+
 <p style="text-align:center;">
+
 The <code>all</code> palette is made up of both the <code>main</code>
 and <code>supporting</code> palettes as below.
 </p>
@@ -150,24 +155,39 @@ and <code>supporting</code> palettes as below.
 <div class="palette-block">
 
 <h4>
+
 <code>main</code>
 </h4>
+
 <table class="phs-table">
+
 <thead>
+
 <tr>
+
 <th>
+
 Name
 </th>
+
 <th>
+
 Hex
 </th>
+
 <th>
+
 Swatch
 </th>
+
 </tr>
+
 </thead>
+
 <tbody>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -177,6 +197,7 @@ phs-purple<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -186,6 +207,7 @@ phs-purple<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #3F3685;">
@@ -193,8 +215,11 @@ phs-purple<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -204,6 +229,7 @@ phs-magenta<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -213,6 +239,7 @@ phs-magenta<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #9B4393;">
@@ -220,8 +247,11 @@ phs-magenta<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -231,6 +261,7 @@ phs-blue<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -240,6 +271,7 @@ phs-blue<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #0078D4;">
@@ -247,8 +279,11 @@ phs-blue<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -258,6 +293,7 @@ phs-green<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -267,6 +303,7 @@ phs-green<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #83BB26;">
@@ -274,8 +311,11 @@ phs-green<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 </tbody>
+
 </table>
 
 </div>
@@ -283,24 +323,39 @@ phs-green<span class="copied-tooltip">Copied!</span>
 <div class="palette-block">
 
 <h4>
+
 <code>supporting</code>
 </h4>
+
 <table class="phs-table">
+
 <thead>
+
 <tr>
+
 <th>
+
 Name
 </th>
+
 <th>
+
 Hex
 </th>
+
 <th>
+
 Swatch
 </th>
+
 </tr>
+
 </thead>
+
 <tbody>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -310,6 +365,7 @@ phs-graphite<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -319,6 +375,7 @@ phs-graphite<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #948DA3;">
@@ -326,8 +383,11 @@ phs-graphite<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -337,6 +397,7 @@ phs-teal<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -346,6 +407,7 @@ phs-teal<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #1E7F84;">
@@ -353,8 +415,11 @@ phs-teal<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -364,6 +429,7 @@ phs-liberty<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -373,6 +439,7 @@ phs-liberty<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #6B5C85;">
@@ -380,8 +447,11 @@ phs-liberty<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -391,6 +461,7 @@ phs-rust<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -400,6 +471,7 @@ phs-rust<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #C73918;">
@@ -407,8 +479,11 @@ phs-rust<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 </tbody>
+
 </table>
 
 </div>
@@ -416,9 +491,12 @@ phs-rust<span class="copied-tooltip">Copied!</span>
 </div>
 
 <h3>
+
 Gradient palettes
 </h3>
+
 <p>
+
 Each colour is also available as a gradient palette, providing suitable
 gradient tints set at 100%, 80%, 50%, 30%, and 10%.
 </p>
@@ -428,24 +506,39 @@ gradient tints set at 100%, 80%, 50%, 30%, and 10%.
 <div class="palette-block">
 
 <h4 style="text-align:center;">
+
 <code>main-purples</code>
 </h4>
+
 <table class="phs-table">
+
 <thead>
+
 <tr>
+
 <th>
+
 Name
 </th>
+
 <th>
+
 Hex
 </th>
+
 <th>
+
 Swatch
 </th>
+
 </tr>
+
 </thead>
+
 <tbody>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -455,6 +548,7 @@ phs-purple<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -464,6 +558,7 @@ phs-purple<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #3F3685;">
@@ -471,8 +566,11 @@ phs-purple<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -482,6 +580,7 @@ phs-purple-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -491,6 +590,7 @@ phs-purple-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #655E9D;">
@@ -498,8 +598,11 @@ phs-purple-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -509,6 +612,7 @@ phs-purple-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -518,6 +622,7 @@ phs-purple-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #9F9BC2;">
@@ -525,8 +630,11 @@ phs-purple-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -536,6 +644,7 @@ phs-purple-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -545,6 +654,7 @@ phs-purple-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #C5C3DA;">
@@ -552,8 +662,11 @@ phs-purple-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -563,6 +676,7 @@ phs-purple-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -572,6 +686,7 @@ phs-purple-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #ECEBF3;">
@@ -579,8 +694,11 @@ phs-purple-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 </tbody>
+
 </table>
 
 </div>
@@ -588,24 +706,39 @@ phs-purple-10<span class="copied-tooltip">Copied!</span>
 <div class="palette-block">
 
 <h4 style="text-align:center;">
+
 <code>main-magentas</code>
 </h4>
+
 <table class="phs-table">
+
 <thead>
+
 <tr>
+
 <th>
+
 Name
 </th>
+
 <th>
+
 Hex
 </th>
+
 <th>
+
 Swatch
 </th>
+
 </tr>
+
 </thead>
+
 <tbody>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -615,6 +748,7 @@ phs-magenta<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -624,6 +758,7 @@ phs-magenta<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #9B4393;">
@@ -631,8 +766,11 @@ phs-magenta<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -642,6 +780,7 @@ phs-magenta-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -651,6 +790,7 @@ phs-magenta-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #AF69A9;">
@@ -658,8 +798,11 @@ phs-magenta-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -669,6 +812,7 @@ phs-magenta-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -678,6 +822,7 @@ phs-magenta-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #CDA1C9;">
@@ -685,8 +830,11 @@ phs-magenta-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -696,6 +844,7 @@ phs-magenta-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -705,6 +854,7 @@ phs-magenta-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #E1C7DF;">
@@ -712,8 +862,11 @@ phs-magenta-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -723,6 +876,7 @@ phs-magenta-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -732,6 +886,7 @@ phs-magenta-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #F5ECF4;">
@@ -739,8 +894,11 @@ phs-magenta-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 </tbody>
+
 </table>
 
 </div>
@@ -752,24 +910,39 @@ phs-magenta-10<span class="copied-tooltip">Copied!</span>
 <div class="palette-block">
 
 <h4 style="text-align:center;">
+
 <code>main-blues</code>
 </h4>
+
 <table class="phs-table">
+
 <thead>
+
 <tr>
+
 <th>
+
 Name
 </th>
+
 <th>
+
 Hex
 </th>
+
 <th>
+
 Swatch
 </th>
+
 </tr>
+
 </thead>
+
 <tbody>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -779,6 +952,7 @@ phs-blue<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -788,6 +962,7 @@ phs-blue<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #0078D4;">
@@ -795,8 +970,11 @@ phs-blue<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -806,6 +984,7 @@ phs-blue-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -815,6 +994,7 @@ phs-blue-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #3393DD;">
@@ -822,8 +1002,11 @@ phs-blue-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -833,6 +1016,7 @@ phs-blue-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -842,6 +1026,7 @@ phs-blue-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #80BCEA;">
@@ -849,8 +1034,11 @@ phs-blue-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -860,6 +1048,7 @@ phs-blue-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -869,6 +1058,7 @@ phs-blue-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #B3D7F2;">
@@ -876,8 +1066,11 @@ phs-blue-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -887,6 +1080,7 @@ phs-blue-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -896,6 +1090,7 @@ phs-blue-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #E6F2FB;">
@@ -903,8 +1098,11 @@ phs-blue-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 </tbody>
+
 </table>
 
 </div>
@@ -912,24 +1110,39 @@ phs-blue-10<span class="copied-tooltip">Copied!</span>
 <div class="palette-block">
 
 <h4 style="text-align:center;">
+
 <code>main-greens</code>
 </h4>
+
 <table class="phs-table">
+
 <thead>
+
 <tr>
+
 <th>
+
 Name
 </th>
+
 <th>
+
 Hex
 </th>
+
 <th>
+
 Swatch
 </th>
+
 </tr>
+
 </thead>
+
 <tbody>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -939,6 +1152,7 @@ phs-green<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -948,6 +1162,7 @@ phs-green<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #83BB26;">
@@ -955,8 +1170,11 @@ phs-green<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -966,6 +1184,7 @@ phs-green-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -975,6 +1194,7 @@ phs-green-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #9CC951;">
@@ -982,8 +1202,11 @@ phs-green-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -993,6 +1216,7 @@ phs-green-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1002,6 +1226,7 @@ phs-green-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #C1DD93;">
@@ -1009,8 +1234,11 @@ phs-green-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1020,6 +1248,7 @@ phs-green-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1029,6 +1258,7 @@ phs-green-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #DAEBBE;">
@@ -1036,8 +1266,11 @@ phs-green-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1047,6 +1280,7 @@ phs-green-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1056,6 +1290,7 @@ phs-green-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #F3F8E9;">
@@ -1063,8 +1298,11 @@ phs-green-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 </tbody>
+
 </table>
 
 </div>
@@ -1076,24 +1314,39 @@ phs-green-10<span class="copied-tooltip">Copied!</span>
 <div class="palette-block">
 
 <h4 style="text-align:center;">
+
 <code>supporting-graphites</code>
 </h4>
+
 <table class="phs-table">
+
 <thead>
+
 <tr>
+
 <th>
+
 Name
 </th>
+
 <th>
+
 Hex
 </th>
+
 <th>
+
 Swatch
 </th>
+
 </tr>
+
 </thead>
+
 <tbody>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1103,6 +1356,7 @@ phs-graphite<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1112,6 +1366,7 @@ phs-graphite<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #948DA3;">
@@ -1119,8 +1374,11 @@ phs-graphite<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1130,6 +1388,7 @@ phs-graphite-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1139,6 +1398,7 @@ phs-graphite-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #A9A4B5;">
@@ -1146,8 +1406,11 @@ phs-graphite-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1157,6 +1420,7 @@ phs-graphite-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1166,6 +1430,7 @@ phs-graphite-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #CAC6D1;">
@@ -1173,8 +1438,11 @@ phs-graphite-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1184,6 +1452,7 @@ phs-graphite-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1193,6 +1462,7 @@ phs-graphite-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #DFDDE3;">
@@ -1200,8 +1470,11 @@ phs-graphite-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1211,6 +1484,7 @@ phs-graphite-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1220,6 +1494,7 @@ phs-graphite-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #F4F4F6;">
@@ -1227,8 +1502,11 @@ phs-graphite-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 </tbody>
+
 </table>
 
 </div>
@@ -1236,24 +1514,39 @@ phs-graphite-10<span class="copied-tooltip">Copied!</span>
 <div class="palette-block">
 
 <h4 style="text-align:center;">
+
 <code>supporting-teals</code>
 </h4>
+
 <table class="phs-table">
+
 <thead>
+
 <tr>
+
 <th>
+
 Name
 </th>
+
 <th>
+
 Hex
 </th>
+
 <th>
+
 Swatch
 </th>
+
 </tr>
+
 </thead>
+
 <tbody>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1263,6 +1556,7 @@ phs-teal<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1272,6 +1566,7 @@ phs-teal<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #1E7F84;">
@@ -1279,8 +1574,11 @@ phs-teal<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1290,6 +1588,7 @@ phs-teal-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1299,6 +1598,7 @@ phs-teal-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #4B999D;">
@@ -1306,8 +1606,11 @@ phs-teal-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1317,6 +1620,7 @@ phs-teal-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1326,6 +1630,7 @@ phs-teal-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #8FBFC2;">
@@ -1333,8 +1638,11 @@ phs-teal-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1344,6 +1652,7 @@ phs-teal-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1353,6 +1662,7 @@ phs-teal-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #BCD9DA;">
@@ -1360,8 +1670,11 @@ phs-teal-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1371,6 +1684,7 @@ phs-teal-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1380,6 +1694,7 @@ phs-teal-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #E9F2F3;">
@@ -1387,8 +1702,11 @@ phs-teal-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 </tbody>
+
 </table>
 
 </div>
@@ -1400,24 +1718,39 @@ phs-teal-10<span class="copied-tooltip">Copied!</span>
 <div class="palette-block">
 
 <h4 style="text-align:center;">
+
 <code>supporting-liberties</code>
 </h4>
+
 <table class="phs-table">
+
 <thead>
+
 <tr>
+
 <th>
+
 Name
 </th>
+
 <th>
+
 Hex
 </th>
+
 <th>
+
 Swatch
 </th>
+
 </tr>
+
 </thead>
+
 <tbody>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1427,6 +1760,7 @@ phs-liberty<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1436,6 +1770,7 @@ phs-liberty<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #6B5C85;">
@@ -1443,8 +1778,11 @@ phs-liberty<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1454,6 +1792,7 @@ phs-liberty-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1463,6 +1802,7 @@ phs-liberty-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #897D9D;">
@@ -1470,8 +1810,11 @@ phs-liberty-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1481,6 +1824,7 @@ phs-liberty-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1490,6 +1834,7 @@ phs-liberty-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #B5AEC2;">
@@ -1497,8 +1842,11 @@ phs-liberty-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1508,6 +1856,7 @@ phs-liberty-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1517,6 +1866,7 @@ phs-liberty-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #D3CEDA;">
@@ -1524,8 +1874,11 @@ phs-liberty-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1535,6 +1888,7 @@ phs-liberty-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1544,6 +1898,7 @@ phs-liberty-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #F0EFF3;">
@@ -1551,8 +1906,11 @@ phs-liberty-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 </tbody>
+
 </table>
 
 </div>
@@ -1560,24 +1918,39 @@ phs-liberty-10<span class="copied-tooltip">Copied!</span>
 <div class="palette-block">
 
 <h4 style="text-align:center;">
+
 <code>supporting-rusts</code>
 </h4>
+
 <table class="phs-table">
+
 <thead>
+
 <tr>
+
 <th>
+
 Name
 </th>
+
 <th>
+
 Hex
 </th>
+
 <th>
+
 Swatch
 </th>
+
 </tr>
+
 </thead>
+
 <tbody>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1587,6 +1960,7 @@ phs-rust<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1596,6 +1970,7 @@ phs-rust<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #C73918;">
@@ -1603,8 +1978,11 @@ phs-rust<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1614,6 +1992,7 @@ phs-rust-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1623,6 +2002,7 @@ phs-rust-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #D26146;">
@@ -1630,8 +2010,11 @@ phs-rust-80<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1641,6 +2024,7 @@ phs-rust-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1650,6 +2034,7 @@ phs-rust-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #E39C8C;">
@@ -1657,8 +2042,11 @@ phs-rust-50<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1668,6 +2056,7 @@ phs-rust-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1677,6 +2066,7 @@ phs-rust-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #EEC4BA;">
@@ -1684,8 +2074,11 @@ phs-rust-30<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 <tr>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1695,6 +2088,7 @@ phs-rust-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td>
 
 <div class="copy-target" onclick="copyText(this)">
@@ -1704,6 +2098,7 @@ phs-rust-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 <td class="swatch">
 
 <div class="swatch-box" style="background-color: #F9EBE8;">
@@ -1711,8 +2106,1171 @@ phs-rust-10<span class="copied-tooltip">Copied!</span>
 </div>
 
 </td>
+
 </tr>
+
 </tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="palette-section">
+
+<div class="palette-block">
+
+<h4 style="text-align:center;">
+
+<code>categories</code>
+</h4>
+
+<table class="phs-table">
+
+<thead>
+
+<tr>
+
+<th>
+
+Name
+</th>
+
+<th>
+
+Hex
+</th>
+
+<th>
+
+Swatch
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-dark-blue<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#12436D<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #12436D;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-turquoise<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#28A197<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #28A197;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-pink<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#801650<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #801650;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-orange<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#F46A25<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #F46A25;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-dark-purple<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#3F085C<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #3F085C;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-light-blue<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#3E8ECC<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #3E8ECC;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-grey<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#3D3D3D<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #3D3D3D;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-light-purple<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#A285D1<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #A285D1;">
+
+</div>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="palette-block">
+
+<h4 style="text-align:center;">
+
+<code>categories-large</code>
+</h4>
+
+<table class="phs-table">
+
+<thead>
+
+<tr>
+
+<th>
+
+Name
+</th>
+
+<th>
+
+Hex
+</th>
+
+<th>
+
+Swatch
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-dark-blue<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#12436D<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #12436D;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-dark-blue-tint<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#94AABD<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #94AABD;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-turquoise<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#28A197<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #28A197;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-turquoise-tint<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#B4DEDB<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #B4DEDB;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-pink<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#801650<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #801650;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-pink-tint<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#CCA2B9<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #CCA2B9;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-orange<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#F46A25<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #F46A25;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-orange-tint<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#FBC3A8<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #FBC3A8;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-grey<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#3D3D3D<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #3D3D3D;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-grey-tint<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#A8A8A8<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #A8A8A8;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-light-blue<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#3E8ECC<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #3E8ECC;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-light-blue-tint<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#A8CCE8<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #A8CCE8;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-dark-purple<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#3F085C<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #3F085C;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-light-purple<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#A285D1<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #A285D1;">
+
+</div>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="palette-section">
+
+<div class="palette-block">
+
+<h4 style="text-align:center;">
+
+<code>rag</code>
+</h4>
+
+<table class="phs-table">
+
+<thead>
+
+<tr>
+
+<th>
+
+Name
+</th>
+
+<th>
+
+Hex
+</th>
+
+<th>
+
+Swatch
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-red<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#A01E25<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #A01E25;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-amber<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#FAA73F<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #FAA73F;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-green-rag<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#005D30<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #005D30;">
+
+</div>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="palette-block">
+
+<h4 style="text-align:center;">
+
+<code>rag-large</code>
+</h4>
+
+<table class="phs-table">
+
+<thead>
+
+<tr>
+
+<th>
+
+Name
+</th>
+
+<th>
+
+Hex
+</th>
+
+<th>
+
+Swatch
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-red<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#A01E25<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #A01E25;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-amber-provisional<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#F46A25<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #F46A25;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-amber<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#FAA73F<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #FAA73F;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-green-provisional<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#3A9948<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #3A9948;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-green-rag<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#005D30<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #005D30;">
+
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+phs-blue-rag<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td>
+
+<div class="copy-target" onclick="copyText(this)">
+
+\#5DA9DD<span class="copied-tooltip">Copied!</span>
+
+</div>
+
+</td>
+
+<td class="swatch">
+
+<div class="swatch-box" style="background-color: #5DA9DD;">
+
+</div>
+
+</td>
+
+</tr>
+
+</tbody>
+
 </table>
 
 </div>
