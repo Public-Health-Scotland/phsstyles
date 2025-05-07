@@ -1721,26 +1721,31 @@ phs-rust-10<span class="copied-tooltip">Copied!</span>
 
 ## Installation
 
-To install `phsstyles`, the package `remotes` is required, and can be
-installed with `install.packages("remotes")`.
-
-You can then install `phsstyles` on RStudio server from GitHub with:
+Users within PHS, using Posit Workbench, are able to install {phsstyles}
+like any other package as the package is made available on the PHS Posit
+Package Manager.
 
 ``` r
-remotes::install_github("Public-Health-Scotland/phsstyles",
-  upgrade = "never"
-)
+install.packages("phsstyles")
 ```
 
-Network security settings may prevent `remotes::install_github()` from
-working on RStudio desktop. If this is the case, `phsstyles` can be
-installed by downloading the [zip of the
-repository](https://github.com/Public-Health-Scotland/phsstyles/archive/master.zip)
-and running the following code (replacing the section marked `<>`,
-including the arrows themselves):
+Outside of the above use case, {phsstyles} can be installed directly
+from GitHub using {remotes} with:
 
 ``` r
-remotes::install_local("<FILEPATH OF ZIPPED FILE>/phsstyles-master.zip",
+remotes::install_github("Public-Health-Scotland/phsstyles")
+```
+
+Where network security settings prevent `remotes::install_github()` from
+working, {phsstyles} can be installed by downloading the [zip of the
+repository](https://github.com/Public-Health-Scotland/phsstyles/archive/master.zip)
+and running the following code (replacing the section marked `<>`,
+including the arrows themselves, with the location of the downloaded
+file):
+
+``` r
+remotes::install_local(
+  "<FILEPATH OF ZIPPED FILE>/phsstyles-master.zip",
   upgrade = "never"
 )
 ```
