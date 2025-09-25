@@ -24,10 +24,19 @@
 #' scale_colour_discrete_phs(palette = "main")
 #'
 #' @export
-scale_colour_discrete_phs <- function(..., type = "seq", palette = 1,
-                                      direction = 1, aesthetics = "colour") {
-  ggplot2::discrete_scale(aesthetics, "phs",
-                          phs_pal(type, palette, direction), ...)
+scale_colour_discrete_phs <- function(
+  ...,
+  type = "seq",
+  palette = 1,
+  direction = 1,
+  aesthetics = "colour"
+) {
+  ggplot2::discrete_scale(
+    aesthetics,
+    "phs",
+    phs_pal(type, palette, direction),
+    ...
+  )
 }
 
 #' @rdname scale_colour_discrete_phs

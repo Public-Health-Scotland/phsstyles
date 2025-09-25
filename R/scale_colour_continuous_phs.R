@@ -31,17 +31,24 @@
 #' scale_colour_continuous_phs(palette = "main-purples")
 #'
 #' @export
-scale_colour_continuous_phs <- function(..., type = "seq", palette = 1,
-                                      direction = 1, values = NULL,
-                                      space = "Lab", na.value = "grey50",
-                                      guide = "colourbar",
-                                      aesthetics = "colour") {
-
+scale_colour_continuous_phs <- function(
+  ...,
+  type = "seq",
+  palette = 1,
+  direction = 1,
+  values = NULL,
+  space = "Lab",
+  na.value = "grey50",
+  guide = "colourbar",
+  aesthetics = "colour"
+) {
   # warn about using a qualitative palette to generate the gradient
   type <- match.arg(type, c("seq", "qual"))
   if (type == "qual") {
-    warning("Using a discrete colour palette in a continuous scale.\n
-         Consider using type = \"seq\" instead")
+    warning(
+      "Using a discrete colour palette in a continuous scale.\n
+         Consider using type = \"seq\" instead"
+    )
   }
 
   pal_length <- length(phs_palettes[[phs_pal_name(palette, type)]])
@@ -59,10 +66,14 @@ scale_colour_continuous_phs <- function(..., type = "seq", palette = 1,
 
   colours <- as.vector(colours)
 
-  ggplot2::continuous_scale(aesthetics, "phs_continuous",
-                            scales::gradient_n_pal(colours, values, space),
-                            na.value = na.value, guide = guide, ...)
-
+  ggplot2::continuous_scale(
+    aesthetics,
+    "phs_continuous",
+    scales::gradient_n_pal(colours, values, space),
+    na.value = na.value,
+    guide = guide,
+    ...
+  )
 }
 
 #' @rdname scale_colour_continuous_phs

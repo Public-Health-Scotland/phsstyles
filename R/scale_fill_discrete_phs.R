@@ -25,8 +25,17 @@
 #' theme(legend.position = "none")
 
 #' @export
-scale_fill_discrete_phs <- function(..., type = "seq", palette = 1,
-                                    direction = 1, aesthetics = "fill") {
-ggplot2::discrete_scale(aesthetics, "phs",
-                        phs_pal(type, palette, direction), ...)
+scale_fill_discrete_phs <- function(
+  ...,
+  type = "seq",
+  palette = 1,
+  direction = 1,
+  aesthetics = "fill"
+) {
+  ggplot2::discrete_scale(
+    aesthetics,
+    "phs",
+    phs_pal(type, palette, direction),
+    ...
+  )
 }

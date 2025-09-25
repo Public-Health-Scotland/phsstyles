@@ -17,21 +17,21 @@
 #' phs_colours()
 #'
 #' @export
-phs_colours <- function(colourname = NULL, keep_names = FALSE){
-
+phs_colours <- function(colourname = NULL, keep_names = FALSE) {
   if (is.null(colourname)) {
     phs_colour_values
   } else if (any(!colourname %in% names(phs_colour_values))) {
-      col_not_list <- colourname[!colourname %in% names(phs_colour_values)]
-      msg <- paste("These colours are not available:",
-                   paste(col_not_list, collapse = ','),
-                   "\nPlease run phs_colours() to see all the available colours"
-                   )
-      stop(msg)
+    col_not_list <- colourname[!colourname %in% names(phs_colour_values)]
+    msg <- paste(
+      "These colours are not available:",
+      paste(col_not_list, collapse = ','),
+      "\nPlease run phs_colours() to see all the available colours"
+    )
+    stop(msg)
   } else if (!keep_names) {
-      unname(phs_colour_values[colourname])
+    unname(phs_colour_values[colourname])
   } else {
-      phs_colour_values[colourname]
+    phs_colour_values[colourname]
   }
 }
 
