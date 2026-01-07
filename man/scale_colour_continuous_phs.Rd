@@ -16,18 +16,6 @@ scale_colour_continuous_phs(
   guide = "colourbar",
   aesthetics = "colour"
 )
-
-scale_color_continuous_phs(
-  ...,
-  type = "seq",
-  palette = 1,
-  direction = 1,
-  values = NULL,
-  space = "Lab",
-  na.value = "grey50",
-  guide = "colourbar",
-  aesthetics = "colour"
-)
 }
 \arguments{
 \item{...}{Additional parameters passed on to the scale type}
@@ -68,8 +56,6 @@ phs-purple-50, phs-purple-30 and phs-purple-10.
 }
 \examples{
 ggplot2::qplot(mpg, wt, data = mtcars, colour = cyl) +
-scale_colour_continuous_phs(palette = "main-purples")
+  scale_colour_continuous_phs(palette = "main-purples")
 
-ggplot2::qplot(mpg, wt, data = mtcars, colour = cyl) +
-scale_color_continuous_phs(palette = "main-purples")
 }
