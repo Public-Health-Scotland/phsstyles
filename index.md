@@ -1,34 +1,15 @@
 # phsstyles
 
-There are 8 colours for use in [Public Health Scotland
-(PHS)](https://www.publichealthscotland.scot/):
+## Overview
 
-- 4 main colours (PHS purple, PHS magenta, PHS blue and PHS green)
-- 4 supporting colours (PHS graphite, PHS teal, PHS liberty and PHS
-  rust)
-- Within each colour there are 5 gradients (e.g. for PHS purple, it
-  contains 100%, 80%, 50%, 30% and 10%)
+The purpose of {phsmethods} is to provide helpful functions to add
+styling to graphics created using
+[{ggplot2}](https://github.com/tidyverse/ggplot2), standardised to PHS
+brand and accessibility guidelines. Additional supporting information on
+this topic is available in the [Dashboard Accessibility
+Guidance](https://public-health-scotland.github.io/knowledge-base/docs/Information%20Sharing?doc=Dashboard%20Accessibility%20Guidance.md).
 
-Those 8 colours are shown below:
-
-![All eight colours for use in Public Health
-Scotland](reference/figures/README-eight_colours.png)
-
-All eight colours for use in Public Health Scotland
-
-Each colour with their gradients are shown below:
-
-![Main colours with their
-gradients](reference/figures/README-main_colours.png)![Supporting
-colours with their
-gradients](reference/figures/README-supporting_colours.png)
-
-Please see [Chart and Dashboard Accessibility
-Guidance](http://spark.publichealthscotland.org/media/2176/chart-and-dashboard-accessibility-guidance-version-12.pdf)
-for more information.
-
-`phsstyles` contains functions for creating graphics with standard
-styles in PHS:
+The functions made available in this package include:
 
 - [`phs_colours()`](https://public-health-scotland.github.io/phsstyles/reference/phs_colours.md)
   returns hex value for specific named colours
@@ -43,46 +24,123 @@ styles in PHS:
 - [`scale_fill_continuous_phs()`](https://public-health-scotland.github.io/phsstyles/reference/scale_fill_continuous_phs.md)
   apply continuous PHS colour filling scales for charts
 
-`phsstyles` can be used on both the
-[server](https://rstudio.nhsnss.scot.nhs.uk/) and desktop versions of
-RStudio.
+### Colour palettes
+
+The [PHS Brand Identity Guidelines](NA) provide corporate colour
+palettes, namely “main” and “supporting”, with eight overall colours
+available:
+
+- **Main colour palette**: PHS purple, PHS magenta, PHS blue, and PHS
+  green
+- **Supporting colour palette**: PHS graphite, PHS teal, PHS liberty,
+  and PHS rust
+
+The guidelines also include recommendations, such as:
+
+- “PHS purple should not be used for text because there is a danger the
+  text will be mistaken for a visited link”
+- “PHS green should not be used for text against a white background as
+  the contrast ratio is too low”
+- “Tints and tones of the corporate colours can be used for borders,
+  backgrounds and hover states of buttons and links”
+
+Within {phsstyles}, the palettes are available individually, as `main`
+or `supporting`, or combined in the `all` palette.
+
+*Hint: the colour names and hex values can be copied by clicking on them
+in the tables below.*
+
+#### `all`
+
+The `all` palette is made up of both the `main` and `supporting`
+palettes as below.
+
+#### `main`
+
+[TABLE]
+
+#### `supporting`
+
+[TABLE]
+
+### Gradient palettes
+
+Each colour is also available as a gradient palette, providing suitable
+gradient tints set at 100%, 80%, 50%, 30%, and 10%.
+
+#### `main-purples`
+
+[TABLE]
+
+#### `main-magentas`
+
+[TABLE]
+
+#### `main-blues`
+
+[TABLE]
+
+#### `main-greens`
+
+[TABLE]
+
+#### `supporting-graphites`
+
+[TABLE]
+
+#### `supporting-teals`
+
+[TABLE]
+
+#### `supporting-liberties`
+
+[TABLE]
+
+#### `supporting-rusts`
+
+[TABLE]
 
 ## Installation
 
-To install `phsstyles`, the package `remotes` is required, and can be
-installed with `install.packages("remotes")`.
-
-You can then install `phsstyles` on RStudio server from GitHub with:
+Users within PHS, using Posit Workbench, are able to install {phsstyles}
+like any other package as the package is made available on the PHS Posit
+Package Manager.
 
 ``` r
-remotes::install_github("Public-Health-Scotland/phsstyles",
-  upgrade = "never"
-)
+install.packages("phsstyles")
 ```
 
-Network security settings may prevent `remotes::install_github()` from
-working on RStudio desktop. If this is the case, `phsstyles` can be
-installed by downloading the [zip of the
-repository](https://github.com/Public-Health-Scotland/phsstyles/archive/master.zip)
-and running the following code (replacing the section marked `<>`,
-including the arrows themselves):
+Outside of the above use case, {phsstyles} can be installed directly
+from GitHub using {remotes} with:
 
 ``` r
-remotes::install_local("<FILEPATH OF ZIPPED FILE>/phsstyles-master.zip",
+remotes::install_github("Public-Health-Scotland/phsstyles")
+```
+
+Where network security settings prevent `remotes::install_github()` from
+working, {phsstyles} can be installed by downloading the [zip of the
+repository](https://github.com/Public-Health-Scotland/phsstyles/archive/master.zip)
+and running the following code (replacing the section marked `<>`,
+including the arrows themselves, with the location of the downloaded
+file):
+
+``` r
+remotes::install_local(
+  "<FILEPATH OF ZIPPED FILE>/phsstyles-master.zip",
   upgrade = "never"
 )
 ```
 
 ## Using phsstyles
 
-Load `phsstyles` using
+Load {phsstyles} using
 [`library()`](https://rdrr.io/r/base/library.html):
 
 ``` r
 library(phsstyles)
 ```
 
-To access the help file for any of `phsstyles`’ functions, type
+To access the help file for a {phsstyles} function, type
 `?function_name` into the RStudio console after loading the package:
 
 ``` r
@@ -90,6 +148,8 @@ To access the help file for any of `phsstyles`’ functions, type
 ```
 
 ### phs_colours
+
+Returns hex value(s) for specific named PHS colours.
 
 ``` r
 # Generate hex code for those colours
@@ -129,6 +189,8 @@ phs_bar_chart
 
 ### theme_phs
 
+Applies the PHS standard theme to a {ggplot2} graphic.
+
 ``` r
 library(ggplot2)
 # Apply PHS theme to a chart
@@ -156,6 +218,9 @@ qplot(mpg, wt, data = mtcars) + theme_phs() +
 
 ### scale_colour_discrete_phs
 
+Applies a discrete PHS colour scale to objects that take colour
+(e.g. lines).
+
 ``` r
 # Create a scatter plot using PHS main colour palette
 library(ggplot2)
@@ -168,6 +233,9 @@ qplot(mpg, wt, data = df, colour = cyl) +
 ![](reference/figures/README-scale_colour_discrete_phs-1.png)
 
 ### scale_fill_discrete_phs
+
+Applies a discrete PHS colour scale to objects that take fill
+(e.g. bars).
 
 ``` r
 # Create a bar chart filled with colours from PHS main-blues palette
@@ -182,6 +250,9 @@ ggplot(mtcars, aes(x = as.factor(cyl), fill = as.factor(cyl))) +
 
 ### scale_colour_continuous_phs
 
+Applies a continuous PHS colour scale to objects that take colour
+(e.g. lines).
+
 ``` r
 # Create a scatter plot using continuous colours from PHS main-purples palette
 library(ggplot2)
@@ -193,6 +264,9 @@ qplot(mpg, wt, data = mtcars, colour = cyl) +
 ![](reference/figures/README-scale_colour_continuous_phs-1.png)
 
 ### scale_fill_continuous_phs
+
+Applies a continuous PHS colour scale to objects that take fill
+(e.g. bars).
 
 ``` r
 # Create a raster chart filled with reversed continuous colours from PHS
@@ -207,7 +281,7 @@ ggplot(faithfuld, aes(waiting, eruptions)) +
 
 ## Contributing to phsstyles
 
-At present, the maintainer of this package is [Tina
+This package is currently maintained by [Tina
 Fu](https://github.com/Tina815).
 
 This package is intended to be in continuous development and
@@ -219,7 +293,7 @@ ensure that no duplication of effort occurs in the case of multiple
 people having the same idea. The package maintainers will discuss the
 issue and get back to you as soon as possible.
 
-While the most obvious and eyecatching (as well as intimidating) way of
+While the most obvious and eye catching (as well as intimidating) way of
 contributing is by writing a function, this isn’t the only way to make a
 useful contribution. Fixing typos in documentation, for example, isn’t
 the most glamorous way to contribute, but is of great help to the
@@ -246,25 +320,25 @@ passwords or person identifiable or otherwise confidential information
 should be included anywhere within this package or any other repository
 (whether public or private) used within PHS. This includes within code
 and code commentary. For more information on security when using git and
-GitHub, and on using git and GitHub for version control more generally,
-please see the [Transforming Publishing
-Programme](https://www.isdscotland.org/Products-and-Services/Transforming-Publishing-Programme/)’s
-[Git guide](https://Public-Health-Scotland.github.io/git-guide/) and
-[GitHub
-guidance](https://github.com/Public-Health-Scotland/GitHub-guidance).
+GitHub and general guidance, please see the [Github
+Guidance](https://public-health-scotland.github.io/knowledge-base/docs/Version%20Control?doc=GitHub%20Guidance.md)
+available on the Data Science Knowledge Base. For general support and
+getting started with git and GitHub for version control, the Data
+Science Knowledge Base has other materials, including the [Git
+guide](https://Public-Health-Scotland.github.io/git-guide/).
 
-Please feel free to add yourself to the ‘Authors’ section of the
-`Description` file when contributing. As a rule of thumb, please assign
+When contributing, please feel free to add yourself to the ‘Authors’
+section of the `Description` file. As a rule of thumb, please assign
 your role as author (`"aut"`) when writing an exported function, and as
 contributor (`"ctb"`) for anything else.
 
-`phsstyles` will, as much as possible, adhere to the [tidyverse style
+{phsstyles} will, as much as possible, adhere to the [tidyverse style
 guide](https://style.tidyverse.org/) and the [rOpenSci package
 development guide](https://devguide.ropensci.org/). The most pertinent
 points to take from these are:
 
 - All function names should be in lower case, with words separated by an
-  underscore
+  underscore (snake_case)
 - Put a space after a comma, never before
 - Put a space before and after infix operators such as `<-`, `==` and
   `+`
