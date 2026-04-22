@@ -1,5 +1,9 @@
 .Rproj.user
 .Rhistory
-.Rdata
+.RData
 .Ruserdata
+*.html
 docs
+inst/doc
+/doc/
+/Meta/
