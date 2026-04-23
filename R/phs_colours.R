@@ -18,21 +18,26 @@
 #'
 #' @export
 phs_colours <- function(colourname = NULL, keep_names = FALSE){
-
+  # Early return avoids unnecessary condition chains
   if (is.null(colourname)) {
-    phs_colour_values
-  } else if (any(!colourname %in% names(phs_colour_values))) {
-      col_not_list <- colourname[!colourname %in% names(phs_colour_values)]
-      msg <- paste("These colours are not available:",
-                   paste(col_not_list, collapse = ','),
-                   "\nPlease run phs_colours() to see all the available colours"
-                   )
-      stop(msg)
-  } else if (!keep_names) {
-      unname(phs_colour_values[colourname])
-  } else {
-      phs_colour_values[colourname]
+    return(phs_colour_values)
   }
+  
+  # Single validation check
+  invalid_idx <- !colourname %in% names(phs_colour_values)
+  if (any(invalid_idx)) {
+    col_not_list <- colourname[invalid_idx]
+    stop("These colours are not available: ",
+         paste(col_not_list, collapse = ','),
+         "\nPlease run phs_colours() to see all the available colours")
+  }
+  
+  # Direct subsetting without unname copy
+  result <- phs_colour_values[colourname]
+  if (!keep_names) {
+    names(result) <- NULL
+  }
+  result
 }
 
 #' @rdname phs_colours

@@ -1,3 +1,7 @@
+# phsstyles 0.1.3 (2026-04-23)
+
+- Minor internal efficiency improvements
+
 # phsstyles 0.1.2 (2024-08-06)
 
 - Exported `phs_colour_values`, `phs_palettes` and `phs_palette_types`. 
