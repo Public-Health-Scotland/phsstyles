@@ -24,11 +24,10 @@ phs_colours <- function(colourname = NULL, keep_names = FALSE){
   }
   
   # Single validation check
-  invalid_idx <- !colourname %in% names(phs_colour_values)
-  if (any(invalid_idx)) {
-    col_not_list <- colourname[invalid_idx]
+  invalid_colours <- setdiff(colourname, names(phs_colour_values))
+  if (length(invalid_colours) > 0) {
     stop("These colours are not available: ",
-         paste(col_not_list, collapse = ','),
+         paste(invalid_colours, collapse = ','),
          "\nPlease run phs_colours() to see all the available colours")
   }
   
