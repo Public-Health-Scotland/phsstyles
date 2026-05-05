@@ -165,17 +165,17 @@ cat('<div class="palette-section">')
 cat('<div class="palette-block"><h4><code>main</code></h4>')
 cat('<table class="phs-table"><thead><tr><th>Name</th><th>Hex</th><th>Swatch</th></tr></thead><tbody>')
 cat(generate_palette_rows(main_palette), sep = "\n")
-cat('</tbody></table></div>')
+cat("</tbody></table></div>")
 # Supporting
 cat('<div class="palette-block"><h4><code>supporting</code></h4>')
 cat('<table class="phs-table"><thead><tr><th>Name</th><th>Hex</th><th>Swatch</th></tr></thead><tbody>')
 cat(generate_palette_rows(supporting_palette), sep = "\n")
-cat('</tbody></table></div>')
-cat('</div>')
+cat("</tbody></table></div>")
+cat("</div>")
 
 # Gradients
-cat('<h3>Gradient palettes</h3>')
-cat('<p>Each colour is also available as a gradient palette, providing suitable gradient tints set at 100%, 80%, 50%, 30%, and 10%.</p>')
+cat("<h3>Gradient palettes</h3>")
+cat("<p>Each colour is also available as a gradient palette, providing suitable gradient tints set at 100%, 80%, 50%, 30%, and 10%.</p>")
 
 # Loop through gradient palettes two at a time
 gradient_names <- names(gradient_palettes)
@@ -189,7 +189,7 @@ for (i in seq(1, num_gradients, by = 2)) {
   cat(sprintf('<div class="palette-block"><h4 style="text-align:center;"><code>%s</code></h4>', name1))
   cat('<table class="phs-table"><thead><tr><th>Name</th><th>Hex</th><th>Swatch</th></tr></thead><tbody>')
   cat(generate_palette_rows(gradient_palettes[[name1]]), sep = "\n")
-  cat('</tbody></table></div>')
+  cat("</tbody></table></div>")
 
   # Optional right block
   if ((i + 1) <= num_gradients) {
@@ -197,10 +197,10 @@ for (i in seq(1, num_gradients, by = 2)) {
     cat(sprintf('<div class="palette-block"><h4 style="text-align:center;"><code>%s</code></h4>', name2))
     cat('<table class="phs-table"><thead><tr><th>Name</th><th>Hex</th><th>Swatch</th></tr></thead><tbody>')
     cat(generate_palette_rows(gradient_palettes[[name2]]), sep = "\n")
-    cat('</tbody></table></div>')
+    cat("</tbody></table></div>")
   }
 
-  cat('</div>') # end row
+  cat("</div>") # end row
 }
 ```
 
