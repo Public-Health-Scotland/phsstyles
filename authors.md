@@ -11,7 +11,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/Public-Health-Scotland/phsstyles/blob/master/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/Public-Health-Scotland/phsstyles/blob/0.2.0/DESCRIPTION)
 
 Fu T, Taylor B, McGlasson J (2026). *phsstyles: Standard Graphic Styles
 for use in Public Health Scotland*. R package version 0.2.0,
