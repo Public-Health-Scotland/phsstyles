@@ -1,5 +1,13 @@
 # Changelog
 
+## phsstyles 0.2.0 (2026-05-05)
+
+- New colour palettes have been added based on the [2025 Accessibility
+  Guidance](https://spark.publichealthscotland.org/media/2926/accessibility-guidance-may-2025-v13.pdf).
+  They are named as `categories`, `categories-large`, `rag` and
+  `rag-large`
+  ([\#18](https://github.com/Public-Health-Scotland/phsstyles/issues/18)).
+
 ## phsstyles 0.1.2 (2024-08-06)
 
 - Exported `phs_colour_values`, `phs_palettes` and `phs_palette_types`.

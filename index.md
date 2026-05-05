@@ -55,6 +55,7 @@ installed with `install.packages("remotes")`.
 You can then install `phsstyles` on RStudio server from GitHub with:
 
 ``` r
+
 remotes::install_github("Public-Health-Scotland/phsstyles",
   upgrade = "never"
 )
@@ -68,6 +69,7 @@ and running the following code (replacing the section marked `<>`,
 including the arrows themselves):
 
 ``` r
+
 remotes::install_local("<FILEPATH OF ZIPPED FILE>/phsstyles-master.zip",
   upgrade = "never"
 )
@@ -79,6 +81,7 @@ Load `phsstyles` using
 [`library()`](https://rdrr.io/r/base/library.html):
 
 ``` r
+
 library(phsstyles)
 ```
 
@@ -86,12 +89,14 @@ To access the help file for any of `phsstyles`’ functions, type
 `?function_name` into the RStudio console after loading the package:
 
 ``` r
+
 ?phs_colours
 ```
 
 ### phs_colours
 
 ``` r
+
 # Generate hex code for those colours
 phs_colours(c("phs-blue", "phs-purple"))
 #> [1] "#0078D4" "#3F3685"
@@ -154,6 +159,7 @@ phs_bar_chart
 ### theme_phs
 
 ``` r
+
 library(ggplot2)
 # Apply PHS theme to a chart
 qplot(mpg, wt, data = mtcars) + theme_phs()
@@ -166,6 +172,7 @@ qplot(mpg, wt, data = mtcars) + theme_phs()
 ![](reference/figures/README-theme_phs-1.png)
 
 ``` r
+
 
 # Overwirte a feature (e.g. remove vertical gridlines and add horizontal ones)
 qplot(mpg, wt, data = mtcars) + theme_phs() +
@@ -181,6 +188,7 @@ qplot(mpg, wt, data = mtcars) + theme_phs() +
 ### scale_colour_discrete_phs
 
 ``` r
+
 # Create a scatter plot using PHS main colour palette
 library(ggplot2)
 df <- mtcars
@@ -194,6 +202,7 @@ qplot(mpg, wt, data = df, colour = cyl) +
 ### scale_fill_discrete_phs
 
 ``` r
+
 # Create a bar chart filled with colours from PHS main-blues palette
 library(ggplot2)
 ggplot(mtcars, aes(x = as.factor(cyl), fill = as.factor(cyl))) + 
@@ -207,6 +216,7 @@ ggplot(mtcars, aes(x = as.factor(cyl), fill = as.factor(cyl))) +
 ### scale_colour_continuous_phs
 
 ``` r
+
 # Create a scatter plot using continuous colours from PHS main-purples palette
 library(ggplot2)
 qplot(mpg, wt, data = mtcars, colour = cyl) + 
@@ -219,6 +229,7 @@ qplot(mpg, wt, data = mtcars, colour = cyl) +
 ### scale_fill_continuous_phs
 
 ``` r
+
 # Create a raster chart filled with reversed continuous colours from PHS
 # main-purples palette
 library(ggplot2)
