@@ -29,8 +29,8 @@
 #' @examples
 #' library(ggplot2)
 #' ggplot(faithfuld, aes(waiting, eruptions)) +
-#' geom_raster(aes(fill = density)) +
-#' scale_fill_continuous_phs(palette = "main-purples", direction = -1)
+#'   geom_raster(aes(fill = density)) +
+#'   scale_fill_continuous_phs(palette = "main-purples", direction = -1)
 #'
 #' @export
 scale_fill_continuous_phs <- function(..., type = "seq", palette = 1,
@@ -38,7 +38,6 @@ scale_fill_continuous_phs <- function(..., type = "seq", palette = 1,
                                       space = "Lab", na.value = "grey50",
                                       guide = "colourbar",
                                       aesthetics = "fill") {
-
   # warn about using a qualitative palette to generate the gradient
   type <- match.arg(type, c("seq", "qual"))
   if (type == "qual") {
@@ -52,7 +51,7 @@ scale_fill_continuous_phs <- function(..., type = "seq", palette = 1,
   values <- scales::rescale(as.numeric(ifelse(is.na(values), "100", values)))
 
   if (direction == -1) {
-    values = rev(values)
+    values <- rev(values)
   }
   if (length(unique(values)) == 1) {
     values <- NULL
@@ -62,7 +61,7 @@ scale_fill_continuous_phs <- function(..., type = "seq", palette = 1,
   colours <- as.vector(colours)
 
   ggplot2::continuous_scale(aesthetics, "phs_continuous",
-                            scales::gradient_n_pal(colours, values, space),
-                            na.value = na.value, guide = guide, ...)
-
+    scales::gradient_n_pal(colours, values, space),
+    na.value = na.value, guide = guide, ...
+  )
 }

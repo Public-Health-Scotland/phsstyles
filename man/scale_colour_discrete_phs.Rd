@@ -39,8 +39,8 @@ phs-purple-50, phs-purple-30 and phs-purple-10.
 }
 \examples{
 df <- mtcars
-df[,'cyl'] <- as.factor(df[,'cyl'])
+df[, "cyl"] <- as.factor(df[, "cyl"])
 ggplot2::qplot(mpg, wt, data = df, colour = cyl) +
-scale_colour_discrete_phs(palette = "main")
+  scale_colour_discrete_phs(palette = "main")
 
 }

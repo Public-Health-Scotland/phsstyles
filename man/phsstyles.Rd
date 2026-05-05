@@ -26,7 +26,9 @@ Useful links:
 
 Authors:
 \itemize{
+  \item Tina Fu \email{Yuyan.Fu2@phs.scot}
   \item Bob Taylor \email{bob.taylor2@phs.scot}
+  \item Jason McGlasson \email{Jason.Mcglasson2@phs.scot}
 }
 
 }

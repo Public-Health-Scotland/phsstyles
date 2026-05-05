@@ -56,6 +56,6 @@ phs-purple-50, phs-purple-30 and phs-purple-10.
 }
 \examples{
 ggplot2::qplot(mpg, wt, data = mtcars, colour = cyl) +
-scale_colour_continuous_phs(palette = "main-purples")
+  scale_colour_continuous_phs(palette = "main-purples")
 
 }
