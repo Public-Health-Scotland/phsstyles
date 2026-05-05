@@ -95,7 +95,29 @@ phs_colour_values <- c(
   "phs-rust-80" = "#D26146",
   "phs-rust-50" = "#E39C8C",
   "phs-rust-30" = "#EEC4BA",
-  "phs-rust-10" = "#F9EBE8")
+  "phs-rust-10" = "#F9EBE8",
+  # New 2025 PHS colours
+  "phs-dark-blue" = "#12436D",
+  "phs-dark-blue-tint" = "#94AABD",
+  "phs-turquoise" = "#28A197",
+  "phs-turquoise-tint" = "#B4DEDB",
+  "phs-pink" = "#801650",
+  "phs-pink-tint" = "#CCA2B9",
+  "phs-orange" = "#F46A25",
+  "phs-orange-tint" = "#FBC3A8",
+  "phs-dark-purple" = "#3F085C",
+  "phs-light-blue" = "#3E8ECC",
+  "phs-light-blue-tint" = "#A8CCE8",
+  "phs-grey" = "#3D3D3D",
+  "phs-grey-tint" = "#A8A8A8",
+  "phs-light-purple" = "#A285D1",
+  "phs-red" = "#A01E25",
+  "phs-amber-provisional" = "#F46A25",
+  "phs-amber" = "#FAA73F",
+  "phs-green-provisional" = "#3A9948",
+  "phs-green-rag" = "#005D30",
+  "phs-blue-rag" = "#5DA9DD"
+)
 
 #' @rdname phs_data
 #' @format `phs_colour_palettes` - A `list` of PHS colours grouped into palettes.
@@ -136,13 +158,45 @@ phs_palettes <- list(
                                                   "phs-liberty-10")],
   "supporting-rusts" = phs_colour_values[c("phs-rust", "phs-rust-80",
                                               "phs-rust-50", "phs-rust-30",
-                                              "phs-rust-10")])
+                                              "phs-rust-10")],
+  "categories" = phs_colour_values[
+    c(
+      "phs-dark-blue", "phs-turquoise", "phs-pink",
+      "phs-orange", "phs-dark-purple", "phs-light-blue",
+      "phs-grey", "phs-light-purple"
+    )],
+  "categories-large" = phs_colour_values[
+    c(
+      "phs-dark-blue", "phs-dark-blue-tint",
+      "phs-turquoise", "phs-turquoise-tint",
+      "phs-pink", "phs-pink-tint",
+      "phs-orange", "phs-orange-tint",
+      "phs-grey", "phs-grey-tint",
+      "phs-light-blue", "phs-light-blue-tint",
+      "phs-dark-purple", "phs-light-purple"
+    )],
+  "rag" = phs_colour_values[
+    c("phs-red", "phs-amber", "phs-green-rag")
+    
+  ),
+  "rag-large" = phs_colour_values[c(
+    "phs-red",
+    "phs-amber-provisional", "phs-amber",
+    "phs-green-provisional", "phs-green-rag",
+    "phs-blue-rag"
+  )]
+    )
+
 #' @rdname phs_data
 #' @format `phs_palette_types` - A `list` of PHS palettes grouped into palette types.
 #' @export
 phs_palette_types <- list(
   qual = c("main", "supporting", "all"),
-  seq = c("main-purples", "main-magentas",
-          "main-blues", "main-greens",
-          "supporting-graphites", "supporting-teals",
-          "supporting-liberties", "supporting-rusts"))
+  seq = c(
+    "main-purples", "main-magentas",
+    "main-blues", "main-greens",
+    "supporting-graphites", "supporting-teals",
+    "supporting-liberties", "supporting-rusts",
+    "categories", "categories-large", "rag", "rag-large"
+  )
+)

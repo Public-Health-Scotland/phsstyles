@@ -28,15 +28,14 @@
 #'
 #' @examples
 #' ggplot2::qplot(mpg, wt, data = mtcars, colour = cyl) +
-#' scale_colour_continuous_phs(palette = "main-purples")
+#'   scale_colour_continuous_phs(palette = "main-purples")
 #'
 #' @export
 scale_colour_continuous_phs <- function(..., type = "seq", palette = 1,
-                                      direction = 1, values = NULL,
-                                      space = "Lab", na.value = "grey50",
-                                      guide = "colourbar",
-                                      aesthetics = "colour") {
-
+                                        direction = 1, values = NULL,
+                                        space = "Lab", na.value = "grey50",
+                                        guide = "colourbar",
+                                        aesthetics = "colour") {
   # warn about using a qualitative palette to generate the gradient
   type <- match.arg(type, c("seq", "qual"))
   if (type == "qual") {
@@ -50,7 +49,7 @@ scale_colour_continuous_phs <- function(..., type = "seq", palette = 1,
   values <- scales::rescale(as.numeric(ifelse(is.na(values), "100", values)))
 
   if (direction == -1) {
-    values = rev(values)
+    values <- rev(values)
   }
   if (length(unique(values)) == 1) {
     values <- NULL
@@ -60,14 +59,12 @@ scale_colour_continuous_phs <- function(..., type = "seq", palette = 1,
   colours <- as.vector(colours)
 
   ggplot2::continuous_scale(aesthetics, "phs_continuous",
-                            scales::gradient_n_pal(colours, values, space),
-                            na.value = na.value, guide = guide, ...)
-
+    scales::gradient_n_pal(colours, values, space),
+    na.value = na.value, guide = guide, ...
+  )
 }
 
 #' @rdname scale_colour_continuous_phs
-#' @examples
-#' ggplot2::qplot(mpg, wt, data = mtcars, colour = cyl) +
-#' scale_color_continuous_phs(palette = "main-purples")
+#' @usage NULL
 #' @export
 scale_color_continuous_phs <- scale_colour_continuous_phs

@@ -56,7 +56,7 @@ phs-purple-50, phs-purple-30 and phs-purple-10.
 \examples{
 library(ggplot2)
 ggplot(faithfuld, aes(waiting, eruptions)) +
-geom_raster(aes(fill = density)) +
-scale_fill_continuous_phs(palette = "main-purples", direction = -1)
+  geom_raster(aes(fill = density)) +
+  scale_fill_continuous_phs(palette = "main-purples", direction = -1)
 
 }

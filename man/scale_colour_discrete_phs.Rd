@@ -12,14 +12,6 @@ scale_colour_discrete_phs(
   direction = 1,
   aesthetics = "colour"
 )
-
-scale_color_discrete_phs(
-  ...,
-  type = "seq",
-  palette = 1,
-  direction = 1,
-  aesthetics = "colour"
-)
 }
 \arguments{
 \item{...}{Additional parameters passed on to the scale type}
@@ -47,12 +39,8 @@ phs-purple-50, phs-purple-30 and phs-purple-10.
 }
 \examples{
 df <- mtcars
-df[,'cyl'] <- as.factor(df[,'cyl'])
+df[, "cyl"] <- as.factor(df[, "cyl"])
 ggplot2::qplot(mpg, wt, data = df, colour = cyl) +
-scale_colour_discrete_phs(palette = "main")
+  scale_colour_discrete_phs(palette = "main")
 
-df <- mtcars
-df[,'cyl'] <- as.factor(df[,'cyl'])
-ggplot2::qplot(mpg, wt, data = df, colour = cyl) +
-scale_color_discrete_phs(palette = "main")
 }

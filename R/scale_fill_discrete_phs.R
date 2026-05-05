@@ -20,13 +20,15 @@
 #' @examples
 #' library(ggplot2)
 #' ggplot(mtcars, aes(x = as.factor(cyl), fill = as.factor(cyl))) +
-#' geom_bar() +
-#' scale_fill_discrete_phs(palette = "main-blues") +
-#' theme(legend.position = "none")
+#'   geom_bar() +
+#'   scale_fill_discrete_phs(palette = "main-blues") +
+#'   theme(legend.position = "none")
 
 #' @export
 scale_fill_discrete_phs <- function(..., type = "seq", palette = 1,
                                     direction = 1, aesthetics = "fill") {
-ggplot2::discrete_scale(aesthetics, "phs",
-                        phs_pal(type, palette, direction), ...)
+  ggplot2::discrete_scale(
+    aesthetics, "phs",
+    phs_pal(type, palette, direction), ...
+  )
 }
