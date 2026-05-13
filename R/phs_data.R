@@ -122,6 +122,10 @@ phs_colour_values <- c(
 #' @rdname phs_data
 #' @format `phs_colour_palettes` - A `list` of PHS colours grouped into palettes.
 #' @export
+
+#' @rdname phs_data
+#' @format `phs_colour_palettes` - A `list` of PHS colours grouped into palettes.
+#' @export
 phs_palettes <- list(
   "main" = phs_colour_values[c("phs-purple", "phs-magenta",
                                   "phs-blue", "phs-green")],
@@ -176,16 +180,14 @@ phs_palettes <- list(
       "phs-dark-purple", "phs-light-purple"
     )],
   "rag" = phs_colour_values[
-    c("phs-red", "phs-amber", "phs-green-rag")
-    
-  ),
+    c("phs-red", "phs-amber", "phs-green-rag")],
   "rag-large" = phs_colour_values[c(
     "phs-red",
     "phs-amber-provisional", "phs-amber",
     "phs-green-provisional", "phs-green-rag",
     "phs-blue-rag"
   )]
-    )
+)
 
 #' @rdname phs_data
 #' @format `phs_palette_types` - A `list` of PHS palettes grouped into palette types.
