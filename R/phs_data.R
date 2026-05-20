@@ -122,92 +122,77 @@ phs_colour_values <- c(
 #' @rdname phs_data
 #' @format `phs_colour_palettes` - A `list` of PHS colours grouped into palettes.
 #' @export
+
+#' @rdname phs_data
+#' @format `phs_colour_palettes` - A `list` of PHS colours grouped into palettes.
+#' @export
 phs_palettes <- list(
-  "main" = phs_colours(c(
+  "main" = phs_colour_values[c(
     "phs-purple", "phs-magenta",
     "phs-blue", "phs-green"
-  ), keep_names = TRUE),
-  "supporting" = phs_colours(
-    c(
-      "phs-graphite", "phs-teal",
-      "phs-liberty", "phs-rust"
-    ),
-    keep_names = TRUE
-  ),
-  "all" = phs_colours(c(
+  )],
+  "supporting" = phs_colour_values[c(
+    "phs-graphite", "phs-teal",
+    "phs-liberty", "phs-rust"
+  )],
+  "all" = phs_colour_values[c(
     "phs-purple", "phs-magenta",
     "phs-blue", "phs-green",
     "phs-graphite", "phs-teal",
     "phs-liberty", "phs-rust"
-  ), keep_names = TRUE),
-  "main-purples" = phs_colours(c(
+  )],
+  "main-purples" = phs_colour_values[c(
     "phs-purple", "phs-purple-80",
     "phs-purple-50", "phs-purple-30",
     "phs-purple-10"
-  ), keep_names = TRUE),
-  "main-magentas" = phs_colours(
-    c(
-      "phs-magenta", "phs-magenta-80",
-      "phs-magenta-50", "phs-magenta-30",
-      "phs-magenta-10"
-    ),
-    keep_names = TRUE
-  ),
-  "main-blues" = phs_colours(c(
+  )],
+  "main-magentas" = phs_colour_values[c(
+    "phs-magenta", "phs-magenta-80",
+    "phs-magenta-50", "phs-magenta-30",
+    "phs-magenta-10"
+  )],
+  "main-blues" = phs_colour_values[c(
     "phs-blue", "phs-blue-80",
     "phs-blue-50", "phs-blue-30",
     "phs-blue-10"
-  ), keep_names = TRUE),
-  "main-greens" = phs_colours(c(
+  )],
+  "main-greens" = phs_colour_values[c(
     "phs-green", "phs-green-80",
     "phs-green-50", "phs-green-30",
     "phs-green-10"
-  ), keep_names = TRUE),
-  "supporting-graphites" = phs_colours(
-    c(
-      "phs-graphite",
-      "phs-graphite-80",
-      "phs-graphite-50",
-      "phs-graphite-30",
-      "phs-graphite-10"
-    ),
-    keep_names = TRUE
-  ),
-  "supporting-teals" = phs_colours(
-    c(
-      "phs-teal", "phs-teal-80",
-      "phs-teal-50", "phs-teal-30",
-      "phs-teal-10"
-    ),
-    keep_names = TRUE
-  ),
-  "supporting-liberties" = phs_colours(
-    c(
-      "phs-liberty",
-      "phs-liberty-80",
-      "phs-liberty-50",
-      "phs-liberty-30",
-      "phs-liberty-10"
-    ),
-    keep_names = TRUE
-  ),
-  "supporting-rusts" = phs_colours(
-    c(
-      "phs-rust", "phs-rust-80",
-      "phs-rust-50", "phs-rust-30",
-      "phs-rust-10"
-    ),
-    keep_names = TRUE
-  ),
-  "categories" = phs_colours(
+  )],
+  "supporting-graphites" = phs_colour_values[c(
+    "phs-graphite",
+    "phs-graphite-80",
+    "phs-graphite-50",
+    "phs-graphite-30",
+    "phs-graphite-10"
+  )],
+  "supporting-teals" = phs_colour_values[c(
+    "phs-teal", "phs-teal-80",
+    "phs-teal-50", "phs-teal-30",
+    "phs-teal-10"
+  )],
+  "supporting-liberties" = phs_colour_values[c(
+    "phs-liberty",
+    "phs-liberty-80",
+    "phs-liberty-50",
+    "phs-liberty-30",
+    "phs-liberty-10"
+  )],
+  "supporting-rusts" = phs_colour_values[c(
+    "phs-rust", "phs-rust-80",
+    "phs-rust-50", "phs-rust-30",
+    "phs-rust-10"
+  )],
+  "categories" = phs_colour_values[
     c(
       "phs-dark-blue", "phs-turquoise", "phs-pink",
       "phs-orange", "phs-dark-purple", "phs-light-blue",
       "phs-grey", "phs-light-purple"
-    ),
-    keep_names = TRUE
-  ),
-  "categories-large" = phs_colours(
+    )
+  ],
+  "categories-large" = phs_colour_values[
     c(
       "phs-dark-blue", "phs-dark-blue-tint",
       "phs-turquoise", "phs-turquoise-tint",
@@ -216,18 +201,17 @@ phs_palettes <- list(
       "phs-grey", "phs-grey-tint",
       "phs-light-blue", "phs-light-blue-tint",
       "phs-dark-purple", "phs-light-purple"
-    ),
-    keep_names = TRUE
-  ),
-  "rag" = phs_colours(c("phs-red", "phs-amber", "phs-green-rag"),
-    keep_names = TRUE
-  ),
-  "rag-large" = phs_colours(c(
+    )
+  ],
+  "rag" = phs_colour_values[
+    c("phs-red", "phs-amber", "phs-green-rag")
+  ],
+  "rag-large" = phs_colour_values[c(
     "phs-red",
     "phs-amber-provisional", "phs-amber",
     "phs-green-provisional", "phs-green-rag",
     "phs-blue-rag"
-  ), keep_names = TRUE)
+  )]
 )
 
 #' @rdname phs_data

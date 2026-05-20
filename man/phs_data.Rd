@@ -10,6 +10,8 @@
 
 \code{phs_colour_palettes} - A \code{list} of PHS colours grouped into palettes.
 
+\code{phs_colour_palettes} - A \code{list} of PHS colours grouped into palettes.
+
 \code{phs_palette_types} - A \code{list} of PHS palettes grouped into palette types.
 }
 \source{
