@@ -16,7 +16,8 @@ Depends:
     R (>= 2.10)
 Imports: 
     ggplot2,
-    scales
+    scales,
+    cli
 Suggests: 
     testthat (>= 3.0.0)
 Config/roxygen2/version: 8.0.0
