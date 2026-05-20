@@ -3377,7 +3377,7 @@ phs_colours()
 
 # Create a ggplot chart using this function
 library(ggplot2)
-phs_bar_chart <- ggplot(mtcars, aes(x = as.factor(cyl), fill = as.factor(cyl))) +  
+phs_bar_chart <- ggplot(mtcars, aes(x = as.factor(cyl), fill = as.factor(cyl))) +
   geom_bar() +
   scale_fill_manual(values = phs_colours(c("phs-purple", "phs-magenta", "phs-blue"))) +
   theme(legend.position = "none")
@@ -3407,11 +3407,17 @@ qplot(mpg, wt, data = mtcars) + theme_phs()
 
 # Overwirte a feature (e.g. remove vertical gridlines and add horizontal ones)
 qplot(mpg, wt, data = mtcars) + theme_phs() +
-  theme(panel.grid.major.x = element_blank(), 
-        panel.grid.major.y = element_line(colour = 
-                                            grDevices::rgb(190 / 255, 
-                                                           190 / 255, 
-                                                           190 / 255)))
+  theme(
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_line(
+      colour =
+        grDevices::rgb(
+          190 / 255,
+          190 / 255,
+          190 / 255
+        )
+    )
+  )
 ```
 
 ![](man/figures/README-theme_phs-2.png)<!-- -->
@@ -3425,8 +3431,8 @@ Applies a discrete PHS colour scale to objects that take colour
 # Create a scatter plot using PHS main colour palette
 library(ggplot2)
 df <- mtcars
-df[,'cyl'] <- as.factor(df[,'cyl'])
-qplot(mpg, wt, data = df, colour = cyl) + 
+df[, "cyl"] <- as.factor(df[, "cyl"])
+qplot(mpg, wt, data = df, colour = cyl) +
   scale_colour_discrete_phs(palette = "main")
 ```
 
@@ -3440,9 +3446,9 @@ Applies a discrete PHS colour scale to objects that take fill
 ``` r
 # Create a bar chart filled with colours from PHS main-blues palette
 library(ggplot2)
-ggplot(mtcars, aes(x = as.factor(cyl), fill = as.factor(cyl))) + 
-  geom_bar() + 
-  scale_fill_discrete_phs(palette = "main-blues") + 
+ggplot(mtcars, aes(x = as.factor(cyl), fill = as.factor(cyl))) +
+  geom_bar() +
+  scale_fill_discrete_phs(palette = "main-blues") +
   theme(legend.position = "none")
 ```
 
@@ -3456,8 +3462,8 @@ Applies a continuous PHS colour scale to objects that take colour
 ``` r
 # Create a scatter plot using continuous colours from PHS main-purples palette
 library(ggplot2)
-qplot(mpg, wt, data = mtcars, colour = cyl) + 
-  scale_colour_continuous_phs(palette = "main-purples") + 
+qplot(mpg, wt, data = mtcars, colour = cyl) +
+  scale_colour_continuous_phs(palette = "main-purples") +
   theme_phs()
 ```
 
@@ -3472,8 +3478,8 @@ Applies a continuous PHS colour scale to objects that take fill
 # Create a raster chart filled with reversed continuous colours from PHS
 # main-purples palette
 library(ggplot2)
-ggplot(faithfuld, aes(waiting, eruptions)) + 
-  geom_raster(aes(fill = density)) + 
+ggplot(faithfuld, aes(waiting, eruptions)) +
+  geom_raster(aes(fill = density)) +
   scale_fill_continuous_phs(palette = "main-purples", direction = -1)
 ```
 
