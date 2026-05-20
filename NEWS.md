@@ -1,3 +1,9 @@
+# phsstyles 0.2.1 (2026-05-20)
+
+- Refactoring changes have been made to improve efficiency of `phs_colors()` function 
+and `phs_data`. The users will have a better visualisation on the error messages
+from `phs_colors()`.
+
 # phsstyles 0.2.0 (2026-05-05)
 
 - New colour palettes have been added based on the 

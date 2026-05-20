@@ -1,6 +1,6 @@
 Package: phsstyles
 Title: Standard Graphic Styles for use in Public Health Scotland
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: c(
     person("Tina", "Fu", , "Yuyan.Fu2@phs.scot", role = c("aut", "cre")),
     person("Bob", "Taylor", , "bob.taylor2@phs.scot", role = "aut"),
