@@ -15,9 +15,9 @@ BugReports: https://github.com/Public-Health-Scotland/phsstyles/issues
 Depends: 
     R (>= 2.10)
 Imports: 
+    cli,
     ggplot2,
-    scales,
-    cli
+    scales
 Suggests: 
     testthat (>= 3.0.0)
 Config/roxygen2/version: 8.0.0
