@@ -1,3 +1,8 @@
+# phsstyles 0.2.2 (2026-06-23)
+
+- Adjust the order of the colours in `categories-large` and `rag-large` palettes 
+for better visualisation.
+
 # phsstyles 0.2.1 (2026-05-20)
 
 - Refactoring changes have been made to improve efficiency of `phs_colors()` function 

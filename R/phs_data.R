@@ -194,23 +194,22 @@ phs_palettes <- list(
   ],
   "categories-large" = phs_colour_values[
     c(
-      "phs-dark-blue", "phs-dark-blue-tint",
-      "phs-turquoise", "phs-turquoise-tint",
-      "phs-pink", "phs-pink-tint",
-      "phs-orange", "phs-orange-tint",
-      "phs-grey", "phs-grey-tint",
-      "phs-light-blue", "phs-light-blue-tint",
-      "phs-dark-purple", "phs-light-purple"
+      "phs-dark-blue", "phs-turquoise",
+      "phs-pink", "phs-orange",
+      "phs-grey", "phs-light-blue",
+      "phs-dark-purple", "phs-dark-blue-tint",
+      "phs-turquoise-tint", "phs-pink-tint",
+      "phs-orange-tint", "phs-grey-tint",
+      "phs-light-blue-tint", "phs-light-purple"
     )
   ],
   "rag" = phs_colour_values[
     c("phs-red", "phs-amber", "phs-green-rag")
   ],
   "rag-large" = phs_colour_values[c(
-    "phs-red",
-    "phs-amber-provisional", "phs-amber",
-    "phs-green-provisional", "phs-green-rag",
-    "phs-blue-rag"
+    "phs-red", "phs-amber",
+    "phs-green-rag", "phs-amber-provisional",
+    "phs-green-provisional", "phs-blue-rag"
   )]
 )
 
